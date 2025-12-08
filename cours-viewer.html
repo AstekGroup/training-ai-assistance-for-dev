@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Coding : Outils IA pour Développeurs - Astek</title>
+    
+    <!-- Marked.js pour le rendu Markdown -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    
+    <!-- Highlight.js pour la coloration syntaxique -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --astek-green: #2EBB4B;
+            --astek-green-dark: #249A3D;
+            --astek-green-light: #3DD65E;
+            --accent-gradient: linear-gradient(135deg, var(--astek-green) 0%, #1FA152 100%);
+        }
+
+        /* Thème sombre (par défaut) */
+        [data-theme="dark"] {
+            --bg-dark: #0D1117;
+            --bg-card: #161B22;
+            --bg-hover: #21262D;
+            --text-primary: #E6EDF3;
+            --text-secondary: #8B949E;
+            --text-muted: #6E7681;
+            --border-color: #30363D;
+            --header-bg: rgba(13, 17, 23, 0.85);
+            --code-bg: #161B22;
+            --gradient-1: rgba(46, 187, 75, 0.08);
+            --gradient-2: rgba(46, 187, 75, 0.05);
+        }
+
+        /* Thème clair */
+        [data-theme="light"] {
+            --bg-dark: #FFFFFF;
+            --bg-card: #F6F8FA;
+            --bg-hover: #EAEEF2;
+            --text-primary: #1F2328;
+            --text-secondary: #59636E;
+            --text-muted: #8C959F;
+            --border-color: #D1D9E0;
+            --header-bg: rgba(255, 255, 255, 0.9);
+            --code-bg: #F6F8FA;
+            --gradient-1: rgba(46, 187, 75, 0.06);
+            --gradient-2: rgba(46, 187, 75, 0.03);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Background pattern */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(ellipse at 20% 20%, var(--gradient-1) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, var(--gradient-2) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: -1;
+            transition: background 0.3s ease;
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            background: var(--header-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            z-index: 100;
+            padding: 0 2rem;
+            transition: background 0.3s ease, border-color 0.3s ease;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            padding: 1rem 0;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-shrink: 0;
+        }
+
+        .logo {
+            height: 40px;
+            width: auto;
+            filter: drop-shadow(0 2px 8px rgba(46, 187, 75, 0.3));
+        }
+
+        .logo-text {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            flex: 1;
+            justify-content: flex-end;
+        }
+
+        .nav-btn {
+            background: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .nav-btn:hover {
+            background: var(--bg-hover);
+            color: var(--text-primary);
+            border-color: var(--text-muted);
+        }
+
+        .nav-btn.active {
+            background: var(--accent-gradient);
+            border-color: var(--astek-green);
+            color: white;
+            box-shadow: 0 4px 16px rgba(46, 187, 75, 0.3);
+        }
+
+        .nav-btn .module-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            height: 22px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-right: 0.5rem;
+        }
+
+        .nav-btn.active .module-num {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        /* Theme Toggle Button */
+        .theme-toggle {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+            margin-left: 1rem;
+        }
+
+        .theme-toggle:hover {
+            background: var(--bg-hover);
+            border-color: var(--astek-green);
+            transform: rotate(15deg);
+        }
+
+        .theme-toggle .icon-sun,
+        .theme-toggle .icon-moon {
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        [data-theme="dark"] .theme-toggle .icon-sun {
+            display: block;
+        }
+
+        [data-theme="dark"] .theme-toggle .icon-moon {
+            display: none;
+        }
+
+        [data-theme="light"] .theme-toggle .icon-sun {
+            display: none;
+        }
+
+        [data-theme="light"] .theme-toggle .icon-moon {
+            display: block;
+        }
+
+        /* Main content */
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 2rem 4rem;
+        }
+
+        /* Loading state */
+        .loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem;
+            gap: 1.5rem;
+        }
+
+        .spinner {
+            width: 48px;
+            height: 48px;
+            border: 3px solid var(--border-color);
+            border-top-color: var(--astek-green);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .loading-text {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        /* Error state */
+        .error {
+            background: rgba(248, 81, 73, 0.1);
+            border: 1px solid rgba(248, 81, 73, 0.3);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .error h3 {
+            color: #F85149;
+            margin-bottom: 0.5rem;
+        }
+
+        .error p {
+            color: var(--text-secondary);
+        }
+
+        /* Markdown content styling */
+        #content {
+            animation: fadeIn 0.4s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        #content h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--astek-green-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        #content h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin: 2.5rem 0 1rem;
+            color: var(--text-primary);
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        #content h3 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin: 2rem 0 0.75rem;
+            color: var(--astek-green-light);
+        }
+
+        #content h4 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.5rem;
+            color: var(--text-primary);
+        }
+
+        #content p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        #content a {
+            color: var(--astek-green);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        #content a:hover {
+            color: var(--astek-green-light);
+            text-decoration: underline;
+        }
+
+        #content ul, #content ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        #content li {
+            margin: 0.5rem 0;
+        }
+
+        #content li::marker {
+            color: var(--astek-green);
+        }
+
+        #content blockquote {
+            border-left: 4px solid var(--astek-green);
+            background: var(--bg-card);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        #content blockquote p {
+            margin: 0;
+            color: var(--text-primary);
+            font-style: italic;
+        }
+
+        #content code {
+            font-family: 'JetBrains Mono', 'Fira Code', monospace;
+            font-size: 0.9em;
+        }
+
+        #content :not(pre) > code {
+            background: var(--bg-card);
+            padding: 0.2em 0.5em;
+            border-radius: 6px;
+            color: var(--astek-green-dark);
+            border: 1px solid var(--border-color);
+        }
+
+        [data-theme="dark"] #content :not(pre) > code {
+            color: var(--astek-green-light);
+        }
+
+        #content pre {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.25rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            position: relative;
+        }
+
+        #content pre code {
+            background: none;
+            padding: 0;
+            border: none;
+            color: var(--text-primary);
+        }
+
+        /* Tables */
+        #content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        #content th, #content td {
+            padding: 0.875rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        #content th {
+            background: var(--bg-hover);
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        #content td {
+            color: var(--text-secondary);
+        }
+
+        #content tr:last-child td {
+            border-bottom: none;
+        }
+
+        #content tr:hover td {
+            background: rgba(46, 187, 75, 0.05);
+        }
+
+        /* Horizontal rule */
+        #content hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+            margin: 2.5rem 0;
+        }
+
+        /* Images */
+        #content img {
+            max-width: 100%;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Checkbox styling */
+        #content input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 18px;
+            height: 18px;
+            border: 2px solid var(--border-color);
+            border-radius: 4px;
+            margin-right: 8px;
+            vertical-align: middle;
+            position: relative;
+            cursor: pointer;
+        }
+
+        #content input[type="checkbox"]:checked {
+            background: var(--astek-green);
+            border-color: var(--astek-green);
+        }
+
+        #content input[type="checkbox"]:checked::after {
+            content: '✓';
+            position: absolute;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Details/Summary */
+        #content details {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin: 1rem 0;
+            overflow: hidden;
+        }
+
+        #content summary {
+            padding: 1rem;
+            cursor: pointer;
+            font-weight: 500;
+            color: var(--text-primary);
+            transition: background 0.2s;
+        }
+
+        #content summary:hover {
+            background: var(--bg-hover);
+        }
+
+        #content details[open] summary {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        #content details > *:not(summary) {
+            padding: 0 1rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: var(--astek-green);
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            header {
+                padding: 0 1rem;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem 0;
+            }
+
+            .logo-container {
+                width: 100%;
+                justify-content: center;
+            }
+
+            nav {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .nav-btn {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.8rem;
+            }
+
+            main {
+                padding: 2rem 1rem;
+            }
+
+            #content h1 {
+                font-size: 1.75rem;
+            }
+
+            #content h2 {
+                font-size: 1.4rem;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            header, footer {
+                display: none;
+            }
+
+            body {
+                background: white;
+                color: black;
+            }
+
+            #content {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="astek-logo.png" alt="Astek Logo" class="logo">
+            </div>
+            <nav>
+                <button class="nav-btn active" data-file="README.md">
+                    🏠 Accueil
+                </button>
+                <button class="nav-btn" data-file="COURS/MODULE_1_Fondements-Avances.md">
+                    <span class="module-num">1</span>Fondements Avancés
+                </button>
+                <button class="nav-btn" data-file="COURS/MODULE_2_Agents-IA.md">
+                    <span class="module-num">2</span>Agents IA
+                </button>
+                <button class="nav-btn" data-file="COURS/MODULE_3_Context-Engineering.md">
+                    <span class="module-num">3</span>Context Engineering
+                </button>
+                <button class="theme-toggle" id="themeToggle" title="Changer de thème">
+                    <span class="icon-sun">☀️</span>
+                    <span class="icon-moon">🌙</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="content">
+            <div class="loading">
+                <div class="spinner"></div>
+                <span class="loading-text">Chargement du contenu...</span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            Formation <strong>Vibe Coding : Outils IA pour Développeurs</strong> — 
+            <a href="mailto:philippe.pary@astek.net">philippe.pary@astek.net</a> — 
+            © 2025 Astek
+        </p>
+    </footer>
+
+    <script>
+        // ============================================
+        // GESTION DU THÈME
+        // ============================================
+        const themeToggle = document.getElementById('themeToggle');
+        const htmlElement = document.documentElement;
+        
+        // Charger le thème sauvegardé ou utiliser dark par défaut
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        htmlElement.setAttribute('data-theme', savedTheme);
+        updateHighlightTheme(savedTheme);
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            htmlElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateHighlightTheme(newTheme);
+        });
+        
+        function updateHighlightTheme(theme) {
+            const highlightLink = document.querySelector('link[href*="highlight.js"]');
+            if (highlightLink) {
+                if (theme === 'light') {
+                    highlightLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css';
+                } else {
+                    highlightLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css';
+                }
+            }
+        }
+
+        // ============================================
+        // CONFIGURATION DE MARKED
+        // ============================================
+        
+        // Configuration de marked
+        marked.setOptions({
+            breaks: true,
+            gfm: true,
+            headerIds: true,
+            mangle: false,
+            highlight: function(code, lang) {
+                if (lang && hljs.getLanguage(lang)) {
+                    try {
+                        return hljs.highlight(code, { language: lang }).value;
+                    } catch (e) {}
+                }
+                return hljs.highlightAuto(code).value;
+            }
+        });
+
+        const contentDiv = document.getElementById('content');
+        const navButtons = document.querySelectorAll('.nav-btn');
+
+        // Fonction pour afficher le contenu
+        function showContent(html) {
+            contentDiv.innerHTML = html;
+            contentDiv.style.animation = 'none';
+            contentDiv.offsetHeight; // Force reflow
+            contentDiv.style.animation = 'fadeIn 0.4s ease';
+            
+            // Highlight code blocks
+            contentDiv.querySelectorAll('pre code').forEach((block) => {
+                hljs.highlightElement(block);
+            });
+        }
+
+        // Fonction pour afficher l'erreur
+        function showError(message, details = '') {
+            contentDiv.innerHTML = `
+                <div class="error">
+                    <h3>⚠️ Erreur de chargement</h3>
+                    <p>${message}</p>
+                    ${details ? `<p style="font-size: 0.85em; margin-top: 1rem;"><code>${details}</code></p>` : ''}
+                </div>
+            `;
+        }
+
+        // Fonction pour afficher le loading
+        function showLoading() {
+            contentDiv.innerHTML = `
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <span class="loading-text">Chargement du contenu...</span>
+                </div>
+            `;
+        }
+
+        // Fonction pour charger un fichier Markdown
+        async function loadMarkdown(file) {
+            showLoading();
+            
+            try {
+                const response = await fetch(file);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const markdown = await response.text();
+                const html = marked.parse(markdown);
+                showContent(html);
+                
+                // Mettre à jour l'URL sans recharger
+                const url = new URL(window.location);
+                url.searchParams.set('module', file);
+                window.history.pushState({file}, '', url);
+                
+            } catch (error) {
+                console.error('Erreur lors du chargement:', error);
+                showError(
+                    'Impossible de charger le fichier demandé.',
+                    `Fichier: ${file} — ${error.message}`
+                );
+            }
+        }
+
+        // Gestionnaire de clic sur les boutons de navigation
+        navButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Mettre à jour les styles des boutons
+                navButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                // Charger le fichier
+                const file = btn.getAttribute('data-file');
+                loadMarkdown(file);
+            });
+        });
+
+        // Gestion du bouton retour du navigateur
+        window.addEventListener('popstate', (event) => {
+            if (event.state && event.state.file) {
+                // Mettre à jour le bouton actif
+                navButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    if (btn.getAttribute('data-file') === event.state.file) {
+                        btn.classList.add('active');
+                    }
+                });
+                loadMarkdown(event.state.file);
+            }
+        });
+
+        // Chargement initial
+        document.addEventListener('DOMContentLoaded', () => {
+            // Vérifier si un module est spécifié dans l'URL
+            const params = new URLSearchParams(window.location.search);
+            const moduleParam = params.get('module');
+            
+            if (moduleParam) {
+                // Activer le bon bouton
+                navButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    if (btn.getAttribute('data-file') === moduleParam) {
+                        btn.classList.add('active');
+                    }
+                });
+                loadMarkdown(moduleParam);
+            } else {
+                // Charger README.md par défaut
+                loadMarkdown('README.md');
+            }
+        });
+    </script>
+</body>
+</html>
