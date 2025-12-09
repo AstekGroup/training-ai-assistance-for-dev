@@ -36,6 +36,33 @@
 - 🏗️ BDMAD : <https://bdmad.org>
 - 🔄 A2A (Agent-to-Agent) : <https://a2a.dev>
 
+## 📚 Structure de la formation
+
+### Jour 1 : Fondements et Prompt Engineering Avancé
+
+- Introduction au Vibe Coding et méthodologie
+- Prompt engineering avancé : techniques et patterns
+- Découverte des outils : Claude Code, Cursor, GitHub Copilot
+- Context engineering : gérer efficacement le contexte
+- **TP Pratique** : Premier projet en Vibe Coding
+
+### Jour 2 : Agents IA et Développement Collaboratif
+
+- Architecture et orchestration d'agents IA
+- Model Context Protocol (MCP) et intégrations
+- Outils d'agents : Continue, WindSurf, A2A
+- Collaboration humain-IA dans le cycle de développement
+- **TP Pratique** : Développement avec agents multiples
+
+### Jour 3 : Qualité, Spécifications et Production
+
+- Génération de spécifications avec SpecKit et OpenSpec
+- Tests automatisés et revue de code assistée par IA
+- Architecture et conception avec BDMAD
+- Bonnes pratiques et patterns de développement
+- **TP Final** : Projet complet de bout en bout
+
+
 ## 📁 Structure du dépôt
 
 ```
