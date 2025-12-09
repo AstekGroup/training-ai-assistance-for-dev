@@ -126,14 +126,25 @@
             height: 40px;
             width: auto;
             filter: drop-shadow(0 2px 8px rgba(46, 187, 75, 0.3));
+            flex-shrink: 0;
         }
 
         .logo-text {
-            font-size: 0.85rem;
-            font-weight: 500;
-            color: var(--text-secondary);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            letter-spacing: 0.2px;
+            max-width: 400px;
+            line-height: 1.3;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .logo-text.loading {
+            color: var(--text-muted);
+            font-style: italic;
         }
 
         /* Navigation */
@@ -546,6 +557,13 @@
             .logo-container {
                 width: 100%;
                 justify-content: center;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo-text {
+                max-width: 280px;
+                font-size: 0.85rem;
             }
 
             nav {
@@ -593,6 +611,7 @@
         <div class="header-content">
             <div class="logo-container">
                 <img src="astek-logo.png" alt="Astek Logo" class="logo">
+                <span class="logo-text loading" id="headerTitle">Chargement...</span>
             </div>
             <nav>
                 <button class="nav-btn active" data-file="README.md">
@@ -777,8 +796,34 @@
             }
         });
 
+        // Fonction pour extraire le titre principal du README
+        async function loadHeaderTitle() {
+            try {
+                const response = await fetch('README.md');
+                if (!response.ok) return;
+                
+                const markdown = await response.text();
+                
+                // Extraire le premier titre H1 (ligne commençant par # )
+                const match = markdown.match(/^#\s+(.+)$/m);
+                if (match) {
+                    const headerTitle = document.getElementById('headerTitle');
+                    headerTitle.textContent = match[1];
+                    headerTitle.classList.remove('loading');
+                }
+            } catch (error) {
+                console.error('Erreur chargement titre:', error);
+                const headerTitle = document.getElementById('headerTitle');
+                headerTitle.textContent = 'Vibe Coding : Outils IA pour Développeurs';
+                headerTitle.classList.remove('loading');
+            }
+        }
+
         // Chargement initial
         document.addEventListener('DOMContentLoaded', () => {
+            // Charger le titre du header
+            loadHeaderTitle();
+            
             // Vérifier si un module est spécifié dans l'URL
             const params = new URLSearchParams(window.location.search);
             const moduleParam = params.get('module');
