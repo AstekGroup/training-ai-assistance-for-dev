@@ -16,14 +16,17 @@
 
 ## 🎯 Objectifs pédagogiques
 
-1. ✅ Maîtriser le **Vibe Coding** : méthodologie de développement collaboratif avec les agents IA.
-1. ✅ Connaître les outils IA qui aident à la conception, au développement et à la qualité des projets.
+1. ✅ Comprendre et pratiquer le **Vibe Coding** : méthodologie de développement collaboratif avec les agents IA
+2. ✅ Maîtriser les techniques de **conception assistée par IA** : architecture, modélisation et spécifications
+3. ✅ Développer efficacement avec les **outils d'assistance au code** : complétion, génération et refactoring
+4. ✅ Assurer la **qualité logicielle** avec l'IA : tests automatisés, revue de code et détection d'anomalies
+5. ✅ Intégrer les agents IA dans le **cycle de vie complet** d'un projet : de l'idée à la production
 
 ## 🛠️ Outils couverts
 
 - 🤖 Claude Code : <https://claude.ai>
 - ✨ Cursor : <https://cursor.sh>
-- 💎 Gemini CLI : <https://ai.google.dev/gemini-api/docs/cli>
+- 💎 Google Antigravity : <https://antigravity.google.com>
 - 🐙 GitHub Copilot : <https://github.com/features/copilot>
 - ▶️ Continue : <https://continue.dev>
 - 🌊 WindSurf : <https://codeium.com/windsurf>
