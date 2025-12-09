@@ -4,24 +4,34 @@
 
 ---
 
-| ℹ️ Informations | Détails |
-| :--- | :--- |
-| **📅 Durée** | 3 jours |
-| **👥 Public** | Tout développeur informatique, testeur, QA, architecte de tout niveau |
-| **💪 Pré-requis** | Connaissances de base en programmation, VSCode, Git, Comptes GitHub & Claude.ai |
-| **👤 Contact** | Philippe Pary (philippe.pary@astek.net) |
-| **🔄 Mise à jour** | 25 novembre 2025 |
+| ℹ️ Informations         | Détails                                                                        |
+| :------------------------ | :------------------------------------------------------------------------------ |
+| **📅 Durée**       | 3 jours                                                                         |
+| **👥 Public**       | Tout développeur informatique, testeur, QA, architecte de tout niveau          |
+| **💪 Pré-requis**  | Connaissances de base en programmation, VSCode, Git, Comptes GitHub & Claude.ai |
+| **👤 Contact**      | Philippe Pary (philippe.pary@astek.net)                                         |
+| **🔄 Mise à jour** | 25 novembre 2025                                                                |
 
 ---
 
 ## 🎯 Objectifs pédagogiques
 
-*   Maîtriser le **Vibe Coding** : méthodologie de développement collaboratif avec les agents IA.
-*   Connaître les outils IA qui aident à la conception, au développement et à la qualité des projets.
+1. ✅ Maîtriser le **Vibe Coding** : méthodologie de développement collaboratif avec les agents IA.
+1. ✅ Connaître les outils IA qui aident à la conception, au développement et à la qualité des projets.
 
 ## 🛠️ Outils couverts
 
-Claude Code, Cursor, Gemini CLI, GitHub Copilot, Continue, WindSurf
+- 🤖 Claude Code : <https://claude.ai>
+- ✨ Cursor : <https://cursor.sh>
+- 💎 Gemini CLI : <https://ai.google.dev/gemini-api/docs/cli>
+- 🐙 GitHub Copilot : <https://github.com/features/copilot>
+- ▶️ Continue : <https://continue.dev>
+- 🌊 WindSurf : <https://codeium.com/windsurf>
+- 🔌 MCP (Model Context Protocol) : <https://modelcontextprotocol.io>
+- 📋 SpecKit : <https://speckit.ai>
+- 📖 OpenSpec : <https://openspec.ai>
+- 🏗️ BDMAD : <https://bdmad.org>
+- 🔄 A2A (Agent-to-Agent) : <https://a2a.dev>
 
 ## 📁 Structure du dépôt
 
