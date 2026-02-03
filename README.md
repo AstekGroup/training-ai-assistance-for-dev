@@ -4,13 +4,13 @@
 
 ---
 
-| ℹ️ Informations         | Détails                                                                        |
-| :------------------------ | :------------------------------------------------------------------------------ |
-| **📅 Durée**       | 3 jours                                                                         |
-| **👥 Public**       | Tout développeur informatique, testeur, QA, architecte de tout niveau          |
-| **💪 Pré-requis**  | Connaissances de base en programmation, VSCode, Git, Comptes GitHub & Claude.ai |
-| **👤 Contact**      | Philippe Pary (philippe.pary@astek.net)                                         |
-| **🔄 Mise à jour** | 25 novembre 2025                                                                |
+| ℹ️ Informations         | Détails                                                               |
+| :------------------------ | :--------------------------------------------------------------------- |
+| **📅 Durée**       | 3 jours                                                                |
+| **👥 Public**       | Tout développeur informatique, testeur, QA, architecte de tout niveau |
+| **💪 Pré-requis**  | Connaissances de base en programmation, IDE Antigravity, Git          |
+| **👤 Contact**      | Philippe Pary (philippe.pary@astek.net)                                |
+| **🔄 Mise à jour** | 25 novembre 2025                                                       |
 
 ---
 
@@ -24,17 +24,17 @@
 
 ## 🛠️ Outils couverts
 
-- 🤖 Claude Code : <https://claude.ai>
-- ✨ Cursor : <https://cursor.sh>
-- 💎 Google Antigravity : <https://antigravity.google.com>
-- 🐙 GitHub Copilot : <https://github.com/features/copilot>
-- ▶️ Continue : <https://continue.dev>
-- 🌊 WindSurf : <https://codeium.com/windsurf>
-- 🔌 MCP (Model Context Protocol) : <https://modelcontextprotocol.io>
-- 📋 SpecKit : <https://speckit.ai>
-- 📖 OpenSpec : <https://openspec.ai>
-- 🏗️ BDMAD : <https://bdmad.org>
-- 🔄 A2A (Agent-to-Agent) : <https://a2a.dev>
+- 🤖 Claude Code : [https://claude.ai](https://claude.ai)
+- ✨ Cursor : [https://cursor.sh](https://cursor.sh)
+- 💎 Google Antigravity : [https://antigravity.google.com](https://antigravity.google.com)
+- 🐙 GitHub Copilot : [https://github.com/features/copilot](https://github.com/features/copilot)
+- ▶️ Continue : [https://continue.dev](https://continue.dev)
+- 🌊 WindSurf : [https://codeium.com/windsurf](https://codeium.com/windsurf)
+- 🔌 MCP (Model Context Protocol) : [https://modelcontextprotocol.io](https://modelcontextprotocol.io)
+- 📋 SpecKit : [https://speckit.ai](https://speckit.ai)
+- 📖 OpenSpec : [https://openspec.ai](https://openspec.ai)
+- 🏗️ BDMAD : [https://bdmad.org](https://bdmad.org)
+- 🔄 A2A (Agent-to-Agent) : [https://a2a.dev](https://a2a.dev)
 
 ## 📚 Structure de la formation
 
@@ -61,7 +61,6 @@
 - Architecture et conception avec BDMAD
 - Bonnes pratiques et patterns de développement
 - **TP Final** : Projet complet de bout en bout
-
 
 ## 📁 Structure du dépôt
 
