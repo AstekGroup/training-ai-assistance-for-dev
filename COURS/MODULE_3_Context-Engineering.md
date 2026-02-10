@@ -30,8 +30,8 @@
 
 ### 1. Le Contrat de Contexte (60min)
 
-#### Qu'est-ce que le Context Engineering ?
-L'art de structurer et optimiser les informations partagées avec l'IA pour obtenir des résultats précis, pertinents et utiles.
+Le contrat de contexte est un document qui permet de définir le contexte dans lequel le ou les agents IA doivent travailler. 
+Il permet de s'assurer que l'agent IA comprend bien le contexte et qu'il peut fournir des résultats précis, pertinents et utiles.
 
 #### Les 6 Piliers du Contrat de Contexte
 

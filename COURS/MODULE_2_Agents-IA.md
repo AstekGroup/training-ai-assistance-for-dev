@@ -23,7 +23,7 @@
 | **9h30 - 10h30** | **Agents IA Théorie Avancée** | 60min | Types d'agents, anatomie technique, démo live |
 | **10h30 - 10h45** | **☕ PAUSE** | 15min | |
 | **10h45 - 12h00** | **Mon Premier Agent** | 75min | Setup + Agent "Code Reviewer" + débrief collectif |
-| **12h00 - 12h30** | **Introduction MCP** | 30min | Model Context Protocol, démos API/DB |
+| **12h00 - 12h30** | **Introduction Rules/Skills/MCP** | 30min | Model Context Protocol, démos API/DB |
 | **12h30 - 13h30** | **🍽️ PAUSE DÉJEUNER** | 60min | |
 | **13h30 - 15h00** | **TP Configuration Serveurs MCP** | 90min | Context 7 et intégration GitLab, configuration MCP pratique |
 | **15h00 - 15h15** | **☕ PAUSE** | 15min | |
@@ -42,23 +42,25 @@
 ### 2. Agents IA : Théorie Avancée (60min)
 
 #### Types d'agents
-- **Agents Réactifs** : Réaction directe aux stimuli (chatbots simples)
-- **Agents Délibératifs** : Planification et raisonnement (agents de décision)
-- **Agents Apprenants** : Apprentissage continu (systèmes adaptatifs)
-- **Agents Collaboratifs** : Orchestration multi-agents
+- **Mode plan**: Planification et raisonnement, il passera la main au mode edit. Ce mode est indispensable pour vibe-coder sérieusement.
+- **Mode edit**: Rédaction de code, de test, de documentation, débogage, etc. 
+- **Mode ask**: Sous-estimé, ce mode permet de *parler* à votre code. Il est utile pour découvrir un projet, comprendre les choix techniques etc. tout en étant certain que l'agent ne modifie rien.
+- **Mode debug**: l'agent n'ajoute pas de fonction et ne fait que corriger le code existant
 
 #### Anatomie technique d'un agent
 ```
-Agent IA = LLM + Outils + Mémoire + Logique de contrôle
+Agent IA = LLM + Rules + Skills + Contexte + Mémoire + Contrôle
 ```
 
 - **LLM** : Moteur de raisonnement (GPT, Claude, Gemini)
-- **Outils** : APIs, fonctions, bases de données
-- **Mémoire** : Contexte court terme + long terme
-- **Contrôle** : Boucle décisionnelle, orchestration
+- **Rules** : Règles systématiques
+- **Skills** : Boîte à outils du LLM (MCP, API, ligne de commande, prompts etc.)
+- **Contexte** : l'ensemble de la fenêtre de conversation actuelle
+- **Mémoire** : stockage de donnée court terme ou long terme
+- **Contrôle** : Mode plan/edit/ask/debug
 
 #### Démonstration live
-Création d'un agent simple avec LangChain ou CrewAI
+Session de vibe coding avec utilisation des différents modes
 
 ### 3. Mon Premier Agent : Code Reviewer (75min)
 
@@ -66,50 +68,73 @@ Création d'un agent simple avec LangChain ou CrewAI
 Développer un agent capable de reviewer du code selon les standards entreprise
 
 #### Étapes
-1. **Setup** (15min)
-   - Installation dépendances (LangChain/CrewAI)
-   - Configuration API keys
-   
-2. **Développement** (45min)
-   - Définition du rôle et des règles
-   - Intégration d'outils (linters, analyseurs)
-   - Gestion de la mémoire
-   - Boucle de review
+- Définition du rôle et des règles
+- Utilisation des outils (linters, analyseurs)
+- Gestion de la mémoire
+- Boucle de review
 
-3. **Test et débrief** (15min)
-   - Tests sur du code réel
-   - Partage collectif des résultats
+#### Test et débrief
+- Tests sur du code réel
+- Partage collectif des résultats
 
-### 4. Introduction au Model Context Protocol (MCP) (30min)
+### 4. Introduction au Rules/Slash Commands/Skills/MCP (30min)
+
+#### Objectif
+Comprendre l'utilité et les différences entre les rules, les skills et le MCP
+
+#### Qu'est-ce que Rules ?
+
+Les rules sont un ensemble de règles systématiques qui sont appliquées par l'agent IA à chaque prompt.
+
+Les rules sont rédigées en langage humain et peuvent faire référence à la documantation comme les ADR, le README.md etc.
+
+Le format principal est le fichier (https://agents.md/)[AGENTS.md] qui contient les règles systématiques. 
+Voir le site web https://agents.md/ pour plus de détails.
+
+#### Qu'est-ce que Slash Commands ?
+
+Les slash commands sont des raccourcis pour des prompts répétitifs.
+
+Leur configuration varie d'un outil à l'autre.
+
+#### Qu'est-ce que Skills ?
+
+C'est un ensemble de compétences que l'agent IA peut utiliser pour effectuer des actions. Ces outils sont considérés au cas par cas en fonction du prompt.
+ Il faut le voir comme une boîte à outil dans laquelle le LLM peut regarder pour trouver de l'aide à réaliser ses tâches.
+
+Les skills sont rédigés en langage humain et peuvent faire référence à des serveurs MCP, des API, des scripts etc.
+
+Voi le site web https://agentskills.io/home pour plus de détails.
 
 #### Qu'est-ce que MCP ?
-Protocole standardisé pour connecter les agents IA aux sources de données et APIs
+Protocole standardisé pour les agents IA.
+Il permet de connecter le LLM d'une manière unique à des DB, des API, etc.
 
-#### Concepts clés
-- **Serveurs MCP** : Exposent données et fonctions
-- **Clients MCP** : Agents consommant les serveurs
-- **Contexte** : Partage d'état entre agents
+Les serveurs MCP peuvent fournir : 
+- des données
+- des outils
+- des prompts
 
-#### Démonstrations
-- MCP pour APIs REST
-- MCP pour bases de données
-- MCP pour systèmes de fichiers
+Voir le site web https://modelcontextprotocol.io/docs/getting-started/intro pour plus de détails.
 
-### 5. TP : Configuration Serveurs MCP (90min)
 
-#### Partie 1 : Context 7 (45min)
-- Installation et configuration
-- Connexion à GitLab
-- Récupération automatique du contexte projet
+### 5. TP : Configuration Rules/Slash Commands/Skills/MCP (90min)
+
+On reprend notre agent reviewer. N'ayez pas peur de recommencer de zéro si vous avez des soucis.
+
+#### Partie 1 : Rules/Slash Commands/Skills (45min)
+- Rédaction d'un fichier AGENTS.md
+- Configuration de slash commands
+- Rédaction de skills : utilisation de `gh` (ou `glab`)
 
 #### Partie 2 : MCP Pratique (45min)
-- Création d'un serveur MCP custom
+- Trouver un MCP de code review pertinent pour votre agent Code Reviewer (par exemple Python Project Analyzer, .Net Static Analysis etc.)
 - Intégration avec agent Code Reviewer
 - Tests d'intégration
 
 ### 6. Sécurité des Agents IA (90min)
 
-#### Menaces 2025
+#### Menaces 2026
 - **Prompt Injection** : Manipulation via prompts malveillants
 - **Data Leakage** : Fuite de données sensibles
 - **Agent Hijacking** : Prise de contrôle de l'agent
