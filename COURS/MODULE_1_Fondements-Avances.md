@@ -20,7 +20,8 @@
 |:--------|:-------|:------|:--------|
 | **9h00 - 9h30** | **Introduction** | 30min | Tour de table niveau expert, projets d'entreprise |
 | **9h30 - 10h15** | **5 Compétences + Preview** | 45min | Framework avancé, transition vers agents |
-| **10h15 - 11h00** | **Prompt Engineering Entreprise** | 45min | Template, contraintes business/conformité |
+| **10h15 - 10h30** | **☕ PAUSE** | 15min | |
+| **10h30 - 11h00** | **Prompt Engineering Entreprise** | 45min | Template, contraintes business/conformité |
 | **11h00 - 12h00** | **Exercice Guidé** | 60min | Todo App Progressive (Compétences Thinking + Frameworks) |
 | **12h00 - 12h30** | **Git + IA Équipes** | 30min | Workflows collaboratifs, preview agents J2 |
 | **12h30 - 13h30** | **🍽️ PAUSE DÉJEUNER** | 60min | |
@@ -34,25 +35,25 @@
 
 ## 📚 Contenu détaillé
 
-### 1. Introduction (30min)
+### 1. Introduction
 - Tour de table : expérience, projets IA en cours
 - Présentation des objectifs de la formation
 - Positionnement niveau expert
 
-### 2. Les 5 Compétences du Vibe Coding (45min)
+### 2. Les 5 Compétences du Vibe Coding
 - **Thinking** : Réflexion et raisonnement assistés par IA
 - **Prompting** : Ingénierie de prompt avancée
 - **Tools** : Maîtrise des outils IA (Cursor, Claude Code, etc.)
 - **Context** : Gestion du contexte et de la mémoire
 - **Review** : Revue critique et validation
 
-### 3. Prompt Engineering Entreprise (45min)
+### 3. Prompt Engineering Entreprise
 - Templates de prompts pour contextes professionnels
 - Contraintes business et conformité (RGPD, sécurité)
 - Techniques de structuration (Chain-of-Thought, Few-Shot)
 - Gestion des hallucinations et validation
 
-### 4. Exercice Guidé : Todo App Progressive (60min)
+### 4. Exercice Guidé : Todo App Progressive
 **Objectif** : Développer une application Todo en appliquant les 5 compétences
 
 - Phase 1 : Thinking - Conception assistée par IA
@@ -61,77 +62,51 @@
 - Phase 4 : Context - Gestion de l'état et de la mémoire
 - Phase 5 : Review - Validation et amélioration
 
-### 5. Git + IA pour Équipes (30min)
+### 5. Git + IA pour Équipes
+- .gitignore est respecté par défaut par les IDE de vibe-coding
 - Workflows collaboratifs avec IA
 - Gestion des conflits assistée
 - Code reviews automatisées
 - Convention de commits avec IA
 - Preview : agents IA pour coordination d'équipe (J2)
 
-### 6. Exercices Pratiques (150min)
+### 6. Exercices Pratiques
 
-#### Exercice 1 : Blog Statique (35min)
+#### Exercice 1 : Blog Statique
 Créer un générateur de blog statique avec IA  
 **Livrables** : Site fonctionnel, générateur de contenu
 
-#### Exercice 2 : Dashboard Simple (35min)
+#### Exercice 2 : Dashboard Simple
 Tableau de bord avec visualisation de données  
 **Livrables** : Dashboard interactif, graphiques
 
-#### Exercice 3 : API CRUD (40min)
+#### Exercice 3 : API CRUD
 API REST complète avec base de données  
 **Livrables** : API fonctionnelle, documentation Swagger
 
-#### Exercice 4 : Générateur de Documentation (40min)
+#### Exercice 4 : Générateur de Documentation
 Outil de génération de documentation technique  
 **Livrables** : Documentation générée, templates réutilisables
 
-### 7. Bonnes Pratiques Entreprise (45min)
-- **Sécurité OWASP** : Top 10 des vulnérabilités
+### 7. Bonnes Pratiques Entreprise
+- **Commiter**: merge rules, commit messages + pre-hook: linting, tests unitaires, tests d'intégration, tests de performance, tests de sécurité…
+- **Sécurité** : OWASP Top 10, couverture de code, duplication de code, analyse statique…
 - **Performance** : Optimisation assistée par IA
-- **Clean Architecture** : Patterns et principes SOLID
+- **Clean Architecture** : Patterns et principes SOLID, architecture hexagonale, DDD…
 - **Tests** : TDD avec assistance IA
 
-### 8. Transition vers les Concepts Avancés (15min)
+### 8. Transition vers les Concepts Avancés
 - Glossaire des agents IA
 - Types d'agents (réactifs, délibératifs, apprenants)
 - Preview du programme J2 et J3
 
-### 9. Challenge Overnight (15min)
-**Mission** : Concevoir 3 agents IA spécialisés pour votre projet
+### 9. Challenge Overnight
+**Mission** : Imaginer 3 agents IA spécialisés pour votre projet
 
 Critères :
 - Agent 1 : Analyse et diagnostic
 - Agent 2 : Génération et création
 - Agent 3 : Validation et amélioration
-
----
-
-## 🛠️ Outils utilisés
-
-- Cursor / Claude Code / Gemini CLI
-- GitHub Copilot
-- VSCode + extensions IA
-- Git
-- Frameworks selon projet (React, FastAPI, etc.)
-
----
-
-## 📦 Livrables
-
-- ✅ 4 projets vibe coding fonctionnels
-- ✅ Maîtrise des 5 compétences
-- ✅ Templates de prompts entreprise
-- ✅ Proposition de 3 agents spécialisés (challenge)
-
----
-
-## 📖 Ressources
-
-- Templates de prompts
-- Checklists sécurité OWASP
-- Guide des bonnes pratiques
-- Documentation des outils IA
 
 ---
 

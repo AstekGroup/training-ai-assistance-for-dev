@@ -8,9 +8,9 @@
 | :------------------------ | :--------------------------------------------------------------------- |
 | **📅 Durée**       | 3 jours                                                                |
 | **👥 Public**       | Tout développeur informatique, testeur, QA, architecte de tout niveau |
-| **💪 Pré-requis**  | Connaissances de base en programmation, IDE Antigravity, Git          |
+| **💪 Pré-requis**  | Connaissances de base en programmation, IDE Antigravity, Git, npm ou python          |
 | **👤 Contact**      | Philippe Pary (philippe.pary@astek.net)                                |
-| **🔄 Mise à jour** | 25 novembre 2025                                                       |
+| **🔄 Mise à jour** | 12 février 2026                                                       |
 
 ---
 
@@ -28,6 +28,7 @@
 - ✨ Cursor : [https://cursor.sh](https://cursor.sh)
 - 💎 Google Antigravity : [https://antigravity.google.com](https://antigravity.google.com)
 - 🐙 GitHub Copilot : [https://github.com/features/copilot](https://github.com/features/copilot)
+- 💻 Codex : [https://openai.com/blog/openai-codex](https://openai.com/blog/openai-codex)
 - ▶️ Continue : [https://continue.dev](https://continue.dev)
 - 🌊 WindSurf : [https://codeium.com/windsurf](https://codeium.com/windsurf)
 - 🔌 MCP (Model Context Protocol) : [https://modelcontextprotocol.io](https://modelcontextprotocol.io)

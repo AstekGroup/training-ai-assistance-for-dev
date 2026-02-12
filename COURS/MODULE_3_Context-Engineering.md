@@ -18,7 +18,8 @@
 
 | Horaire | Module | Durée | Contenu |
 |:--------|:-------|:------|:--------|
-| **9h00 - 10h00** | **Le Contrat de Contexte** | 60min | Context Engineering, 6 piliers, template contrat de contexte |
+| **9h15 - 10h15** | **Le Contrat de Contexte** | 60min | Context Engineering, 6 piliers, template contrat de contexte |
+| **10h15 - 10h30** | **☕ PAUSE** | 15min | |
 | **10h00 - 12h30** | **IA : Debug, Optim, Tests, Review** | 150min | IA pour débogage, optimisation code, génération tests, revue code, exercice pratique |
 | **12h30 - 13h30** | **🍽️ PAUSE DÉJEUNER** | 60min | |
 | **13h30 - 17h00** | **TP Final - Projet Collaboratif** | 210min | Orchestration multi-agents : P.O., Architecte, Développement, QA, Code Review, analyse critique |
@@ -28,7 +29,7 @@
 
 ## 📚 Contenu détaillé
 
-### 1. Le Contrat de Contexte (60min)
+### 1. Le Contrat de Contexte
 
 Le contrat de contexte est un document qui permet de définir le contexte dans lequel le ou les agents IA doivent travailler. 
 Il permet de s'assurer que l'agent IA comprend bien le contexte et qu'il peut fournir des résultats précis, pertinents et utiles.
@@ -78,9 +79,9 @@ Il permet de s'assurer que l'agent IA comprend bien le contexte et qu'il peut fo
 [Comment mesurer le succès]
 ```
 
-### 2. IA pour le Cycle de Développement Complet (150min)
+### 2. IA pour le Cycle de Développement Complet
 
-#### 2.1 Débogage assisté par IA (35min)
+#### 2.1 Débogage assisté par IA
 
 **Techniques**
 - Analyse automatique des stack traces
@@ -89,7 +90,7 @@ Il permet de s'assurer que l'agent IA comprend bien le contexte et qu'il peut fo
 
 **Exercice pratique** : Déboguer une application avec bugs multiples
 
-#### 2.2 Optimisation de code (35min)
+#### 2.2 Optimisation de code
 
 **Domaines**
 - Performance (complexité algorithmique, optimisations)
@@ -98,7 +99,7 @@ Il permet de s'assurer que l'agent IA comprend bien le contexte et qu'il peut fo
 
 **Exercice pratique** : Optimiser du code legacy
 
-#### 2.3 Génération de tests (40min)
+#### 2.3 Génération de tests
 
 **Types de tests**
 - Tests unitaires avec mocks
@@ -108,7 +109,7 @@ Il permet de s'assurer que l'agent IA comprend bien le contexte et qu'il peut fo
 
 **Exercice pratique** : Générer une suite de tests complète
 
-#### 2.4 Revue de code assistée (40min)
+#### 2.4 Revue de code assistée
 
 **Aspects analysés**
 - Standards et conventions
@@ -119,7 +120,7 @@ Il permet de s'assurer que l'agent IA comprend bien le contexte et qu'il peut fo
 
 **Exercice pratique** : Reviewer une pull request complète
 
-### 3. TP Final - Projet Collaboratif Multi-Agents (210min)
+### 3. TP Final - Projet Collaboratif Multi-Agents
 
 #### Objectif
 Développer une application complète en orchestrant plusieurs agents IA spécialisés
@@ -153,12 +154,12 @@ Développer une application complète en orchestrant plusieurs agents IA spécia
 
 #### Déroulement du TP
 
-**Phase 1 : Setup et Brief (30min)**
+**Phase 1 : Setup et Brief**
 - Constitution des équipes (2-3 personnes)
 - Choix du projet (parmi 3 propositions)
 - Configuration des agents
 
-**Phase 2 : Cycle de développement (150min)**
+**Phase 2 : Cycle de développement**
 - Sprint 1 (60min) : MVP
   - PO : User stories
   - Architecte : Design technique
@@ -176,7 +177,7 @@ Développer une application complète en orchestrant plusieurs agents IA spécia
   - Documentation finale
   - Préparation démo
 
-**Phase 3 : Démonstrations (30min)**
+**Phase 3 : Démonstrations**
 - Chaque équipe présente (10min)
 - Questions et retours
 - Analyse critique collective
@@ -207,7 +208,7 @@ Développer une application complète en orchestrant plusieurs agents IA spécia
 - Quel est le vrai gain de productivité ?
 - Quelles nouvelles compétences sont requises ?
 
-### 4. Conclusion de la Formation (30min)
+### 4. Conclusion de la Formation
 
 #### Synthèse des 3 jours
 - Jour 1 : Fondements et pratiques
@@ -224,38 +225,6 @@ Développer une application complète en orchestrant plusieurs agents IA spécia
 - Communautés et veille technologique
 - Certification potentielle
 - Suivi post-formation
-
----
-
-## 🛠️ Outils utilisés
-
-- **Context Engineering** : Templates, AGENTS.md
-- **Debugging** : IA-powered debuggers
-- **Testing** : Frameworks IA (Pytest + IA, Jest + IA)
-- **Orchestration** : LangChain, CrewAI, AutoGen
-- **Collaboration** : Git, GitHub, outils de démo
-
----
-
-## 📦 Livrables
-
-- ✅ Contrat de contexte appliqué
-- ✅ Suite de tests générés par IA
-- ✅ Application complète développée en mode multi-agents
-- ✅ Documentation et démo finale
-- ✅ Analyse critique des forces/limites de l'IA
-
----
-
-## 📖 Ressources
-
-- Template Contrat de Contexte
-- Guides de debugging IA
-- Frameworks de tests IA
-- Exemples de projets multi-agents
-- Lectures complémentaires sur le Context Engineering
-
----
 
 ## 🎓 Compétences acquises
 
