@@ -43,43 +43,46 @@ Il permet de s'assurer que l'agent IA comprend bien le contexte et qu'il peut fo
    *"Concevoir une architecture microservices pour une application e-commerce"*
 
 3. **Contraintes** : Spécifier les limitations et exigences  
-   *"Stack: Python/FastAPI, Cloud: AWS, Budget: limité"*
+   *"Stack: Python/FastAPI, Cloud: AWS, Budget: limité, Skills: Architect-Scheme-Designer"*
 
 4. **Contexte** : Fournir le contexte projet  
-   *"Projet existant en monolithe, 50k utilisateurs/jour, équipe de 5 devs"*
+   *"Projet existant en monolithe, 50k utilisateurs/jour, équipe de 2 devs + un architecte"*
 
 5. **Format** : Définir le format de sortie attendu  
-   *"Diagramme C4, fichiers de config, documentation technique"*
+   *"Diagramme C4, fichiers de config, ADR"*
 
 6. **Validation** : Critères de succès  
    *"Respect patterns SOLID, tests >80%, documentation complète"*
 
 #### Template de Contrat de Contexte
 ```markdown
-# CONTRAT DE CONTEXTE
+## CONTRAT DE CONTEXTE [NOM DE L'AGENT]
 
-## Rôle
+### Rôle
 [Définition du rôle de l'agent]
 
-## Objectif
+### Objectif
 [But précis à atteindre]
 
-## Contraintes
+### Contraintes
 - Technique : [langages, frameworks, outils]
 - Business : [délais, budget, scope]
 - Qualité : [couverture tests, performance, sécurité]
+- Vibe coding : [skills, MCP]
 
-## Contexte
+### Contexte
 [Informations sur le projet, l'équipe, l'existant]
 
-## Format attendu
+### Format attendu
 [Structure de la réponse souhaitée]
 
-## Critères de validation
+### Critères de validation
 [Comment mesurer le succès]
 ```
 
 ### 2. IA pour le Cycle de Développement Complet
+
+Un rapide tour sur ce qui peut être fait avec l'IA pour le cycle de développement complet.
 
 #### 2.1 Débogage assisté par IA
 
@@ -88,7 +91,7 @@ Il permet de s'assurer que l'agent IA comprend bien le contexte et qu'il peut fo
 - Détection de patterns d'erreurs
 - Suggestions de fixes contextualisés
 
-**Exercice pratique** : Déboguer une application avec bugs multiples
+**Exemple** : Déboguer une application avec bugs multiples
 
 #### 2.2 Optimisation de code
 
@@ -97,28 +100,30 @@ Il permet de s'assurer que l'agent IA comprend bien le contexte et qu'il peut fo
 - Lisibilité (refactoring, naming)
 - Maintenabilité (découplage, SOLID)
 
-**Exercice pratique** : Optimiser du code legacy
+**Exemple** : Optimiser du code legacy
 
 #### 2.3 Génération de tests
 
 **Types de tests**
-- Tests unitaires avec mocks
+- Tests unitaires
 - Tests d'intégration
 - Tests end-to-end
+- Contrôle de la cohérence des données
 - Génération de données de test
 
-**Exercice pratique** : Générer une suite de tests complète
+**Exemple** : Générer une suite de tests complète
 
 #### 2.4 Revue de code assistée
 
 **Aspects analysés**
+- Relectures de Pull Request / Merge Request
 - Standards et conventions
 - Sécurité (OWASP)
 - Performance
 - Maintenabilité
 - Documentation
 
-**Exercice pratique** : Reviewer une pull request complète
+**Exemple** : Reviewer une pull request complète
 
 ### 3. TP Final - Projet Collaboratif Multi-Agents
 
@@ -155,9 +160,8 @@ Développer une application complète en orchestrant plusieurs agents IA spécia
 #### Déroulement du TP
 
 **Phase 1 : Setup et Brief**
-- Constitution des équipes (2-3 personnes)
 - Choix du projet (parmi 3 propositions)
-- Configuration des agents
+- Configuration des agents (PO, Architecte, Développement, QA, Code Reviewer)
 
 **Phase 2 : Cycle de développement**
 - Sprint 1 (60min) : MVP
@@ -189,15 +193,15 @@ Développer une application complète en orchestrant plusieurs agents IA spécia
    - Suggestions d'amélioration
    - Scoring qualité
 
-2. **Assistant Développeur Intelligent**
-   - Génération de code contextuel
-   - Debugging interactif
-   - Documentation auto-générée
+2. **Réseau social d'entreprise**
+   - Réseau social à la LinkedIn (posts, commentaires, réactions, pages personnelles etc.)
+   - Reprise des posts de la société sur les réseaux sociaux existants (Instagram, LinkedIn etc.)
+   - Système de modération
 
-3. **Système de Monitoring IA**
+3. **Système de Monitoring**
+   - Générer des faux logs volumineux à analyser avec un dashboard
    - Détection d'anomalies
    - Prédiction de pannes
-   - Recommandations d'optimisation
 
 #### Analyse critique (incluse dans la phase 3)
 
@@ -217,24 +221,6 @@ Développer une application complète en orchestrant plusieurs agents IA spécia
 
 #### Évaluation
 - Questionnaire de satisfaction
-- Auto-évaluation des compétences acquises
-- Retours formateurs
-
-#### Prochaines étapes
-- Ressources complémentaires
-- Communautés et veille technologique
-- Certification potentielle
-- Suivi post-formation
-
-## 🎓 Compétences acquises
-
-À l'issue de cette journée finale, vous maîtrisez :
-
-✅ Le Context Engineering avec les 6 piliers  
-✅ L'utilisation de l'IA sur tout le cycle de développement  
-✅ L'orchestration d'agents IA spécialisés  
-✅ L'analyse critique des apports et limites de l'IA  
-✅ Les meilleures pratiques de développement assisté par IA  
 
 ---
 
