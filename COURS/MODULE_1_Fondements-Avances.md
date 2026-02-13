@@ -40,6 +40,16 @@
 - Présentation des objectifs de la formation
 - Positionnement niveau expert
 
+⚠ **Avertissement : assistance IA vs projet IA**
+
+Cette formation vise à maîtriser les concepts avancés du Vibe Coding et le Prompt Engineering entreprise. Bref, à utiliser l'IA pour vous aider à créer des logiciels classiques, à mener vos tests, à gérer vos sprints etc.
+
+Attention à ne pas confondre **assistance IA** et **projet IA**. Avoir un assistant IA ne vous permet pas de créer un projet IA.
+
+💡 *« Avoir une voiture ne vous permet pas de créer une voiture »* 
+
+Il existe des cursus de formations dédiés aux projets IA, n'hésitez pas à me solliciter à ce sujet
+
 ### 2. Les 5 Compétences du Vibe Coding
 - **Thinking** : Réflexion et raisonnement assistés par IA
 - **Prompting** : Ingénierie de prompt avancée
@@ -64,6 +74,8 @@
 
 ### 5. Git + IA pour Équipes
 - .gitignore est respecté par défaut par les IDE de vibe-coding
+- **commitez souvent**, créez vous des points de retour en arrière si votre agent a fait fausse piste
+- **respectez le gitworkflow même si vous travaillez en solo**, vous pouvez utiliser des branches pour chaque fonctionnalité, ce qui permet de lancer plusieurs agents en parallèle 
 - Workflows collaboratifs avec IA
 - Gestion des conflits assistée
 - Code reviews automatisées
