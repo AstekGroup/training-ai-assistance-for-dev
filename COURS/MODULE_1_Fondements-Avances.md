@@ -96,8 +96,8 @@ Tableau de bord avec visualisation de données
 API REST complète avec base de données  
 **Livrables** : API fonctionnelle, documentation Swagger
 
-#### Exercice 4 : Générateur de Documentation
-Outil de génération de documentation technique  
+#### Exercice 4 : Générer la Documentation
+Trouver un prompt efficace pour générer une documentation uniformisée pour les projets précédents.
 **Livrables** : Documentation générée, templates réutilisables
 
 ### 7. Bonnes Pratiques Entreprise
