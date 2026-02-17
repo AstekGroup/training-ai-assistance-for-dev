@@ -100,6 +100,14 @@ API REST complète avec base de données
 Trouver un prompt efficace pour générer une documentation uniformisée pour les projets précédents.
 **Livrables** : Documentation générée, templates réutilisables
 
+#### Exercice 5 : Tests
+Rédiger des tests pour les projets précédents.
+**Livrables** : Tests unitaires, tests d'intégration, tests de performance, tests de sécurité et cahier de recette pour les tests fonctionnels
+
+#### Exercice 6 : Optimisation
+Optimiser les projets précédents pour améliorer les performances.
+**Livrables** : Factorisation, audit de sécurité, rapport de performance, audit d'accessibilité
+
 ### 7. Bonnes Pratiques Entreprise
 - **Commiter**: merge rules, commit messages + pre-hook: linting, tests unitaires, tests d'intégration, tests de performance, tests de sécurité…
 - **Sécurité** : OWASP Top 10, couverture de code, duplication de code, analyse statique…
