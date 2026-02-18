@@ -22,13 +22,14 @@
 | **9h00 - 9h30** | **Retour Challenge + Intro** | 30min | Partage agents imaginés, patterns récurrents |
 | **9h30 - 10h15** | **Agents IA Théorie Avancée** | 60min | Types d'agents, anatomie technique, démo live |
 | **10h30 - 10h45** | **☕ PAUSE** | 15min | |
-| **10h45 - 12h00** | **Mon Premier Agent** | 75min | Setup + Agent "Code Reviewer" + débrief collectif |
-| **12h00 - 12h30** | **Introduction Rules/Skills/MCP** | 30min | Model Context Protocol, démos API/DB |
+| **10h45 - 11h15** | **Introduction Rules/Skills/MCP** | 30min | Model Context Protocol, démos API/DB |
+| **11h15 - 12h30** | **TP : Introduction Rules/Skills/MCP** | 75min | Setup + débrief collectif |
 | **12h30 - 13h30** | **🍽️ PAUSE DÉJEUNER** | 60min | |
-| **13h30 - 15h00** | **Utilisation des Skills / Serveurs MCP** | 90min | Context 7 et intégration GitLab, Browser/Playwright, configuration MCP pratique |
+| **13h30 - 14h30** | **Utilisation des Skills / Serveurs MCP** | 90min | Context 7 et intégration GitLab, Browser/Playwright, configuration MCP pratique |
+| **14h30 - 15h00** | **Sécurité Agents IA** | 30min | Menaces 2026, défenses pratiques |
 | **15h00 - 15h15** | **☕ PAUSE** | 15min | |
-| **15h15 - 16h45** | **Sécurité Agents IA** | 90min | Menaces 2025, défenses pratiques, atelier sécurité |
-| **16h45 - 17h30** | **Frameworks + Bilan J2** | 45min | BMAD-METHOD détaillée, impact métier développeur |
+| **15h15 - 17h15** | **BMAD-METHOD** | 120min | BMAD-METHOD détaillée, impact métier développeur |
+| **17h15 - 17h30** | **Bilan J2** | 15min | Retour sur la journée de formation |
 
 ---
 
@@ -58,7 +59,7 @@ Les rules sont un ensemble de règles systématiques qui sont appliquées par l'
 
 Les rules sont rédigées en langage humain et peuvent faire référence à la documantation comme les ADR, le README.md etc.
 
-Le format principal est le fichier (https://agents.md/)[AGENTS.md] qui contient les règles systématiques. 
+Le format principal est le fichier [AGENTS.md](https://agents.md/) qui contient les règles systématiques. 
 Voir le site web https://agents.md/ pour plus de détails.
 
 #### Qu'est-ce que les Skills ?
@@ -94,36 +95,22 @@ C'est la manière dont l'agent IA va interagir avec vous et le code.
 
 Selon l'IDE, tous les modes ne sont pas disponibles. Par exemple, dans Antigravity, le mode ask et le mode debug ne sont pas disponibles.
 
-### 3. Mon Premier Agent : Code Reviewer
+### 3. TP : Configuration Rules/Slash Commands/Skills/MCP
 
-#### Objectif
-Développer un agent capable de reviewer du code selon les standards entreprise
-
-#### Étapes
-- Définition du rôle et des règles
-- Utilisation des outils (linters, analyseurs)
-- Gestion de la mémoire
-- Boucle de review
-
-#### Test et débrief
-- Tests sur du code réel
-- Partage collectif des résultats
-
-### 4. TP : Configuration Rules/Slash Commands/Skills/MCP
-
-On reprend notre agent reviewer. N'ayez pas peur de recommencer de zéro si vous avez des soucis.
-
-#### Partie 1 : Rules/Slash Commands/Skills (45min)
+#### Partie 1 : Rules
 - Rédaction d'un fichier AGENTS.md
-- Configuration de slash commands
-- Rédaction de skills : utilisation de `gh` (ou `glab`)
+- Tests avec votre agent
 
-#### Partie 2 : MCP Pratique (45min)
-- Trouver un MCP de code review pertinent pour votre agent Code Reviewer (par exemple Python Project Analyzer, .Net Static Analysis etc.)
-- Intégration avec agent Code Reviewer
-- Tests d'intégration
+#### Partie 2 : Skills
+- Rédaction de skills : pensez à inclure la documentation (https://agentskills.io/home) car les LLM sont encore peu au fait de la spécification des skills
+- Tests avec votre agent
 
-### 5. Sécurité des Agents IA
+#### Partie 3 : MCP Pratique
+- Trouver un MCP à tester
+- Intégration avec vos rules et/ou vos skills
+- Tests avec votre agent
+
+### 4. Sécurité des Agents IA
 
 #### Menaces 2026
 - **Prompt Injection** : Manipulation via prompts malveillants
@@ -137,18 +124,12 @@ On reprend notre agent reviewer. N'ayez pas peur de recommencer de zéro si vous
 - **Sandboxing** : Isolation des agents
 - **Monitoring** : Surveillance continue
 
-#### Atelier sécurité
-- Attaques simulées
-- Mise en place de guardrails
-- Tests de robustesse
-
-### 6. BMAD-METHOD
+### 5. BMAD-METHOD
 
 C'est une méthode de développement logiciel qui utilise les agents IA pour automatiser et améliorer le processus de développement. 
 
 Voir le site web https://bmadcodes.com/ pour plus de détails.
 
-#### Présentation détaillée
 **B**rainstorm → **M**odel → **A**rchitect → **D**evelop
 
 - **Brainstorm** : Génération d'idées avec agents IA
@@ -156,11 +137,11 @@ Voir le site web https://bmadcodes.com/ pour plus de détails.
 - **Architect** : Architecture technique avec validation IA
 - **Develop** : Développement orchestré par agents
 
-#### Impact métier développeur
-- Gain de productivité (30-50%)
-- Amélioration qualité
-- Réduction de la dette technique
-- Nouvelles compétences requises
+### 6. TP guidé : BMAD-METHOD 
+
+- Installer BMAD
+- lancer le processus BMAD
+- étudier les résultats
 
 ---
 
