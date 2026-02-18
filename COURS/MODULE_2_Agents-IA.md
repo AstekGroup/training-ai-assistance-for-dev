@@ -95,7 +95,7 @@ C'est la manière dont l'agent IA va interagir avec vous et le code.
 
 Selon l'IDE, tous les modes ne sont pas disponibles. Par exemple, dans Antigravity, le mode ask et le mode debug ne sont pas disponibles.
 
-### 3. TP : Configuration Rules/Slash Commands/Skills/MCP
+### 3. TP : Configuration Rules/Skills/MCP
 
 #### Partie 1 : Rules
 - Rédaction d'un fichier AGENTS.md
