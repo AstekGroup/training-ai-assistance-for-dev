@@ -113,7 +113,9 @@ Optimiser les projets précédents pour améliorer les performances.
 - **Sécurité** : OWASP Top 10, couverture de code, duplication de code, analyse statique…
 - **Performance** : Optimisation assistée par IA
 - **Clean Architecture** : Patterns et principes SOLID, architecture hexagonale, DDD…
-- **Tests** : TDD avec assistance IA
+- **Tests** : Alerte sur le TDD avec assistance IA, alerte sur la volonté des LLM de modifier les tests (ou le code) sans validation
+- **Focus points**: compression de contexte, perte d'information, hallucinations, temps de prise en compte des nouveaux fichiers…
+
 
 ### 8. Transition vers les Concepts Avancés
 - Glossaire des agents IA
