@@ -68,7 +68,9 @@ C'est un ensemble de compétences que l'agent IA peut utiliser pour effectuer de
 
 Les skills sont rédigés en langage humain et peuvent faire référence à des serveurs MCP, des API, des scripts etc.
 
-Voi le site web https://agentskills.io/home pour plus de détails.
+![Concevoir et maintenir des skills](COURS/Images/SKILL.jpeg)
+
+Voir le site web https://agentskills.io/home pour plus de détails.
 
 #### Qu'est-ce que MCP ?
 Protocole standardisé pour les agents IA.

@@ -10,7 +10,7 @@
 | **👥 Public**       | Tout développeur informatique, testeur, QA, architecte de tout niveau |
 | **💪 Pré-requis**  | Connaissances de base en programmation, IDE Antigravity, git, npm ou python          |
 | **👤 Contact**      | Philippe Pary (philippe.pary@astek.net)                                |
-| **🔄 Mise à jour** | 12 février 2026                                                       |
+| **🔄 Mise à jour** | 18 février 2026                                                       |
 
 ---
 
