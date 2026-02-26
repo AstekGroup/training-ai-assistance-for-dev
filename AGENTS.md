@@ -1,8 +1,6 @@
-# CLAUDE.md
+# AGENTS.md
 
-Ce fichier fournit des directives à Claude Code (claude.ai/code) lors du travail avec le code de ce dépôt.
-
-## Rôles pour Claude
+## Rôles
 
 ### Ingénieur pédagogique
 
@@ -16,31 +14,26 @@ Quand on te demande de transformer les contenus de formations pour en faire des 
 
 Tu favorises l'usage de technologies web simples et fiables. Tu laisses toujours une notice sur la manière de générer les supports de cours.
 
-Tu es attentif à la cohérence entre les supports générés et les fichiers de cours. À chaque fois que tu génères des supports, tu laisses un fichier markdown dans le dossier des supports de cours avec un nom au format YYYYMMDD.md
-
 ## Vue d'ensemble du dépôt
 
-Il s'agit d'un dépôt de formation complet "Vibe Coding" contenant des matériaux pour plusieurs formats de formation :
-
-- **Starter (1 jour)** : Introduction à la programmation assistée par IA avec gemini-cli et d'autres outils
-- **Build (3 jours)** : Développement agentique avancé et Context Engineering
-- **Collective (5 jours)** : Matériaux de formation en équipe
+Il s'agit du dépôt de la formation "Vibe Coding : Outils IA pour Développeurs" (format 3 jours).
 
 ## Structure du dépôt
 
 ```
 /
-├── Starter − 1 day/           # Formation starter d'1 jour
-│   ├── COURS/                 # Contenus de formation (MD)
-│   └── SUPPORTS PÉDAGOGIQUES/ # Présentations (HTML, PDF, PPTX, DOCX)
-├── Build − 3 days/         # Formation build de 3 jours
-│   ├── COURS/                 # Contenus de formation organisés par jour
-│   └── SUPPORTS PÉDAGOGIQUES/ # Présentations et slides (HTML)
-├── Collective - 5 days/       # Formation collective de 5 jours
-├── Code/                      # Exemples de code de formation (à supprimer)
-├── astek-logo.png            # Logo de l'entreprise
-├── custom_header.tex         # Modèle d'en-tête LaTeX
-└── README.md                 # Documentation principale du projet
+├── ANNEXES/            # Syllabus et documents administratifs (PDF, MD)
+├── COURS/              # Contenus théoriques par modules (Markdown)
+│   ├── Images/         # Assets visuels des cours (schémas, captures)
+│   ├── MODULE_1_...    # Fondements et Prompt Engineering Avancé
+│   ├── MODULE_2_...    # Agents IA et Développement Collaboratif
+│   └── MODULE_3_...    # Context Engineering et Qualité
+├── AGENTS.md           # Instructions pour les agents IA (ce fichier)
+├── README.md           # Documentation principale de la formation
+├── README.pdf          # Version PDF du README
+├── astek-logo.png      # Logo entreprise
+├── astek-icon.png      # Icône entreprise
+└── cours-viewer.html   # Visionneuse HTML des contenus
 ```
 
 ## Philosophie de formation
@@ -63,29 +56,29 @@ Ce dépôt est conçu autour de la méthodologie "Vibe Coding" :
 - **Spec-Kit**: Framework de planification orienté spécifications
 - **OpenSpec**: Framework de planification orienté spécifications
 - **BMAD-METHOD** : Framework de planification collaborative
-- **SuperClaude/CCPM** : Approche de développement guidée par les spécifications
+- **AGENTS.md**: Définition des agents utilisés
+- **SKILL.md**: Définition des compétences utilisées
 - **MCP (Model-Controller-Prompter)** : Pont entre l'IA et les outils externes
 
 ## Matériaux de cours
 
-### Cours Starter (1 jour)
+### Modules de formation (3 jours)
 
-- **Dossier** : `Starter − 1 day/COURS/`
-- **Fichier principal** : `Formation-Complete-Starter.md`
-- **Supports** : `Starter − 1 day/SUPPORTS PÉDAGOGIQUES/`
-- **Langue** : Français
-- **Focus** : Introduction aux concepts de vibe coding, ingénierie de base des prompts, exercices simples
-- **Prérequis** : Connaissances de base en programmation, VSCode et gemini installés
+- **Dossier** : [`COURS/`](./COURS/)
+- **Syllabus** : Contenus détaillés dans le dossier [`ANNEXES/`](./ANNEXES/).
+- **Visionneuse** : Fichier [`cours-viewer.html`](./cours-viewer.html) pour la lecture des contenus. ⚠ à lancer avec un serveur HTTP local (ex: `python -m http.server`) ⚠
 
-### Cours Build (3 jours)
+#### Jour 1 : Fondements et Prompt Engineering Avancé
+- **Fichier** : [`COURS/MODULE_1_Fondements-Avances.md`](./COURS/MODULE_1_Fondements-Avances.md)
+- **Focus** : Les 5 compétences du Vibe Coding, Prompt Engineering entreprise, workflows Git.
 
-- **Dossier** : `Build − 3 days/COURS/`
-- **Fichier principal** : `Formation-Complete-Build.md`
-- **Modules par jour** : `JOUR 1/`, `JOUR 2/`, `JOUR 3/`
-- **Supports** : `Build − 3 days/SUPPORTS PÉDAGOGIQUES/`
-- **Langue** : Français
-- **Focus** : Développement agentique avancé, Context Engineering, considérations de sécurité
-- **Format** : Jour 1 = Contenu Starter, Jours 2-3 = Concepts avancés
+#### Jour 2 : Agents IA et Développement Collaboratif
+- **Fichier** : [`COURS/MODULE_2_Agents-IA.md`](./COURS/MODULE_2_Agents-IA.md)
+- **Focus** : Architecture d'agents, orchestration, MCP, développement agentique.
+
+#### Jour 3 : Context Engineering et Qualité
+- **Fichier** : [`COURS/MODULE_3_Context-Engineering.md`](./COURS/MODULE_3_Context-Engineering.md)
+- **Focus** : Gestion avancée du contexte, tests automatisés avec IA, revue de code.
 
 ## Directives de développement
 
@@ -93,7 +86,7 @@ Ce dépôt est conçu autour de la méthodologie "Vibe Coding" :
 
 - Préserver la structure pédagogique lors des modifications
 - Conserver la documentation en français car il s'agit d'un programme de formation français
-- Respecter la difficulté progressive de Starter → Build → Collective
+- Respecter la difficulté progressive entre les modules (Jour 1 → Jour 2 → Jour 3)
 - Mettre à jour les numéros de version et les dates lors de changements significatifs
 
 ### Modifications de fichiers
