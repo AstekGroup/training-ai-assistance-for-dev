@@ -114,15 +114,17 @@ Selon l'IDE, tous les modes ne sont pas disponibles. Par exemple, dans Antigravi
 
 #### Menaces 2026
 - **Prompt Injection** : Manipulation via prompts malveillants
-- **Data Leakage** : Fuite de données sensibles
+- **Hallucination Attacks** : Exploitation des hallucinations (risque de plus en plus faible, les modèles progressent)
+
+### Exploitations 2026
+ **Data Leakage** : Fuite de données sensibles
 - **Agent Hijacking** : Prise de contrôle de l'agent
-- **Hallucination Attacks** : Exploitation des hallucinations
 
 #### Défenses pratiques
-- **Input Validation** : Sanitization des entrées
-- **Output Filtering** : Validation des sorties
-- **Sandboxing** : Isolation des agents
-- **Monitoring** : Surveillance continue
+- **Input Validation** : Validation des entrées, bloquer les recherches web, contrôler le code récupéré
+- **Output Filtering** : Validation des sorties, lire le code généré et les commentaires de l'agent
+- **Sandboxing** : Isolation des agents, peu pratique mais possible si le contexte le nécessite
+- **Monitoring** : Surveillance continue via surveillance de l'activité réseau de l'agent (Firewall, Proxy, etc.)
 
 ### 5. BMAD-METHOD
 
