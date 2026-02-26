@@ -66,19 +66,19 @@
 ## 📁 Structure du dépôt
 
 ```
-├── COURS/                     # Modules de cours
-│   ├── MODULE_1_Fondements-Avances.md
-│   ├── MODULE_2_Agents-IA.md
-│   └── MODULE_3_Context-Engineering.md
-├── EXERCICES/                 # Exercices pratiques
-│   └── solutions/
-├── SUPPORTS/                  # Présentations et supports
-│   ├── presentations/
-│   ├── templates/
-│   └── archives/
-│       └── starter-1-jour/    # Archive Starter
-└── OUTILS/                    # Scripts et outils
-    └── scripts/
+/
+├── ANNEXES/            # Syllabus et documents administratifs (PDF, MD)
+├── COURS/              # Contenus théoriques par modules (Markdown)
+│   ├── Images/         # Assets visuels des cours (schémas, captures)
+│   ├── MODULE_1_...    # Fondements et Prompt Engineering Avancé
+│   ├── MODULE_2_...    # Agents IA et Développement Collaboratif
+│   └── MODULE_3_...    # Context Engineering et Qualité
+├── AGENTS.md           # Instructions pour les agents IA
+├── README.md           # Documentation principale de la formation
+├── README.pdf          # Version PDF du README
+├── astek-logo.png      # Logo entreprise
+├── astek-icon.png      # Icône entreprise
+└── cours-viewer.html   # Visionneuse HTML des contenus
 ```
 
 ---
