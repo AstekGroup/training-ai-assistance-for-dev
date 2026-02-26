@@ -58,10 +58,13 @@ Il existe des cursus de formations dédiés aux projets IA, n'hésitez pas à me
 - **Review** : Revue critique et validation
 
 ### 3. Prompt Engineering Entreprise
-- Templates de prompts pour contextes professionnels
-- Contraintes business et conformité (RGPD, sécurité)
-- Techniques de structuration (Chain-of-Thought, Few-Shot)
-- Gestion des hallucinations et validation
+- Favorisez les prompts précis (limiter le drift)
+- Premier prompt est essentiel, prenez le temps de préciser vos besoins
+- Relisez attentivement le plan proposé par l'agent, vous gagnerez du temps
+- Indiquez vos contraintes business et conformité (RGPD, sécurité)
+- Utilisez les techniques de structuration (Chain-of-Thought, Few-Shot)
+- Validation du code généré : relisez attentivement le code généré, vous gagnerez du temps
+- Rouvrez une nouvelle fenêtre de conversation après chaque fonctionnalité majeure ou à la fin d'un plan
 
 ### 4. Exercice Guidé : Todo App Progressive
 **Objectif** : Développer une application Todo en appliquant les 5 compétences
