@@ -53,6 +53,18 @@ Agent IA = LLM + Rules + Skills + Contexte + Mode
 - **Contexte** : l'ensemble de la fenêtre de conversation actuelle + systèmes de mémoire court terme/long terme
 - **Contrôle** : Mode plan/edit/ask/debug
 
+#### Le drift : perte de qualité dans le temps
+
+Au plus le contexte est long, au plus le LLM a de mal à retrouver les informations pertinentes
+- difficulté à faire la différence entre instructions et données
+- difficulté à retrouver les informations pertinentes
+- anciennes versions des fichiers présentes dans le contexte
+
+Il en résulte une perte de qualité des réponses
+- Favoriser l'utilisation de Rules plutôt que de prompts longs
+- Utiliser des Skills pour fournir des informations contextuelles
+- Limiter la taille du contexte en redémarrant régulièrement la conversation
+
 #### Qu'est-ce que les Rules ?
 
 Les rules sont un ensemble de règles systématiques qui sont appliquées par l'agent IA à chaque prompt.
