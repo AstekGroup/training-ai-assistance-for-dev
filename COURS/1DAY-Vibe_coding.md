@@ -21,8 +21,7 @@
 
 ## Public visé
 
-Cette formation s’adresse aux développeur·se·s souhaitant optimiser leur productivité grâce à
-Cursor.
+Cette formation s’adresse aux développeur·se·s souhaitant optimiser leur productivité grâce à Cursor.
  
 ## Plan de formation
 
@@ -61,7 +60,11 @@ Cursor.
 ### Comprendre et utiliser l’IA pour coder efficacement (1H30)
 - Comment Cursor génère ses suggestions
 - Validation et amélioration des propositions de code
-- Exploitation des modes d’interaction avancés avec l’IA
+- Exploitation des modes d’interaction avancés avec l’IA 
+    - **Agent** : mode pour agir directement sur le code ou lancer des scripts
+    - **Plan** : mode pour planifier des tâches complexes, mode à favoriser pour les tâches complexes
+    - **Ask** : mode pour poser des questions à l’IA par rapport au projet
+    - **Debug** : mode pour déboguer du code, l'IA n'ajoutera pas de fonctionnalité, elle corrigera uniquement le code existant
 - Utilisation de Cursor pour refactorer intelligemment
 - Les 5 Compétences du Vibe Coding
     - **Thinking** : Réflexion et raisonnement assistés par IA
@@ -84,13 +87,36 @@ Cursor.
 ```Agent IA = LLM + Rules + Skills + Contexte + Mode```
 
 - **LLM** : Moteur de raisonnement (GPT, Claude, Gemini)
-- **Rules** : Règles systématiques
-- **Skills** : Boîte à outils du LLM (MCP, API, ligne de commande, prompts etc.)
+- **Rules** : Règles systématiques définies par [AGENTS.md](https://agents.md/)
+- **Skills** : Boîte à outils du LLM (MCP, API, ligne de commande, prompts etc.) définies par [SKILL.md](https://agentskills.io/home)
 - **Contexte** : l'ensemble de la fenêtre de conversation actuelle + systèmes de mémoire court terme/long terme
 - **Contrôle** : Mode plan/edit/ask/debug
 
-- **Rules** : définies par [AGENTS.md](https://agents.md/)
-- **Skills** : définies par [SKILL.md](https://agentskills.io/home)
+#### Liste des modèles
+
+| Modèle | Type | Commentaire |
+|------|------|------|
+| Gemini 3.1 Pro | High |  |
+| Claude-Opus-4.6 | High | plus lent mais plus performant |
+| Composer-1.5 | High | plus rapide, performance mal connue |
+| Gemini 3.1 Flash | Medium |  |
+| Claude-4.6-Sonnet | Medium |  |
+| Composer-1 | Medium | rapide |
+| ChatGPT-Codex-5.3 | Medium |  |
+| Kimi K2 | Low | Quasiment gratuit |
+
+#### Liste des uses cases
+
+| Use case | Mode | Modèle | Commentaire |
+|------|-------------|----------------|-------|
+| Lint, debug simple | debug | Composer-1, Gemini-Flash, Haiku, Kimi K2 | modèles légers |
+| Commit | agent | Composer-1, Gemini-Flash, Haiku, Kimi K2 |  |
+| Lancer un script | agent | Composer-1, Gemini-Flash, Haiku, Kimi K2 |  |
+| Optimiser le code | Plan | Claude-Opus, Gemini-Pro, Composer-1.5 | dérouler avec un modèle léger |
+| Executer les tests | agent | Composer-1, Gemini-Flash, Haiku, Kimi K2 |  |
+| Écrire des tests | agent | Composer-1, Gemini-Flash |  |
+| Développer une fonctionnalité | plan | Composer-1, Claude-Sonnet, Gemini-Flash | Modèles moyens |
+| Développer une epic | plan | Claude-Opus, Gemini-Pro, Composer-1.5 | dérouler avec un modèle moyen |
 
 **TP** faire rédiger un AGENTS.md et un SKILL.md pour un agent IA
 
@@ -166,4 +192,5 @@ Cursor.
 
 ---
 
-Date de mise à jour: 26/02/2026
+Date de mise à jour: 05/03/2026
+Auteur: Philippe PARY (philippe.pary@astek.net)
