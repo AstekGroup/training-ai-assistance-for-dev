@@ -9,6 +9,7 @@
 
 - Maîtriser le concept de Contrat de Contexte et ses 6 piliers
 - Utiliser l'IA pour le débogage, l'optimisation, les tests et la revue de code
+- Présenter la méthode de travail Stage Gate
 - Orchestrer plusieurs agents IA dans un projet collaboratif
 - Analyser de manière critique les limites et opportunités de l'IA en développement
 
@@ -22,7 +23,8 @@
 | **10h15 - 10h30** | **☕ PAUSE** | 15min | |
 | **10h00 - 12h30** | **IA : Debug, Optim, Tests, Review** | 150min | IA pour débogage, optimisation code, génération tests, revue code, exercice pratique |
 | **12h30 - 13h30** | **🍽️ PAUSE DÉJEUNER** | 60min | |
-| **13h30 - 17h00** | **TP Final - Projet Collaboratif** | 210min | Orchestration multi-agents : P.O., Architecte, Développement, QA, Code Review, analyse critique |
+| **13h30 - 14h00** | **Stage Gate** | 30min | Présentation de la méthode de travail Stage Gate |
+| **14h00 - 17h00** | **TP Final - Projet Collaboratif** | 210min | Orchestration multi-agents : P.O., Architecte, Développement, QA, Code Review, analyse critique |
 | **17h00 - 17h30** | **Conclusion Formation** | 30min | Synthèse, évaluation, prochaines étapes |
 
 ---
@@ -125,7 +127,63 @@ Un rapide tour sur ce qui peut être fait avec l'IA pour le cycle de développem
 
 **Exemple** : Reviewer une pull request complète
 
-### 3. TP Final - Projet Collaboratif Multi-Agents
+### 3. Stage Gate - Méthode de travail
+
+![Stage Gate](images/stage-gate.jpg)
+
+```mermaid
+graph LR
+    S1[Stage 1: Scoping] --> G1{Gate 1}
+    G1 --> S2[Stage 2: Génération protype]
+    S2 --> G2{Gate 2}
+    G2 --> S3[Stage 3: Raffinement avec business case]
+    S3 --> G3{Gate 3}
+    G3 --> S4[Stage 4: Revue avec plan d'implémentation]
+    S4 --> G4{Gate 4}
+    G4 --> S5[Stage 5: Livraison, validation du produit]
+    S5 --> G5[Stage 6: Mise en production, lancement du produit] 
+    
+    style G1 fill:#f9f,stroke:#333,stroke-width:2px
+    style G2 fill:#f9f,stroke:#333,stroke-width:2px
+    style G3 fill:#f9f,stroke:#333,stroke-width:2px
+    style G4 fill:#f9f,stroke:#333,stroke-width:2px
+    style S1 fill:#bbf,stroke:#333,stroke-width:1px
+    style S2 fill:#bbf,stroke:#333,stroke-width:1px
+    style S3 fill:#bbf,stroke:#333,stroke-width:1px
+    style S4 fill:#bbf,stroke:#333,stroke-width:1px
+    style S5 fill:#dfd,stroke:#333,stroke-width:1px
+```
+
+La méthode **Stage-Gate** (ou Phase-Gate) est un cadre de gestion de projet qui divise le flux de travail en étapes distinctes (**Stages**) séparées par des points de décision critiques (**Gates**). 
+
+Dans le cadre du développement assisté par IA (Vibe Coding), cette approche permet de garantir la qualité et la pertinence du code généré tout en gardant le contrôle humain (**Human-in-the-loop**) sur les résultats.
+
+#### Les 5 Phases & Portes (Gates) :
+
+1. **Stage 1 : Scoping & Contextualisation**  
+   *Action* : Définition précise du besoin métier et rédaction du **Contrat de Contexte**.  
+   *Gate 1* : L'objectif et les contraintes sont-ils clairs et validés avant de solliciter l'IA ?
+
+2. **Stage 2 : Génération & Maquettage**  
+   *Action* : Utilisation des agents IA pour produire une première version (draft / PoC).  
+   *Gate 2* : Le code généré respecte-t-il les standards de base (Naming, Lint, Structure) ?
+
+3. **Stage 3 : Raffinement & Tests**  
+   *Action* : Correction des bugs, implémentation des cas limites, génération des tests unitaires.  
+   *Gate 3* : La couverture de tests est-elle suffisante (>80%) et tous les tests passent-ils ?
+
+4. **Stage 4 : Revue & Sécurité**  
+   *Action* : Revue de code systématisée par un agent spécialisé ou un pair, audit de sécurité (OWASP).  
+   *Gate 4* : Le code est-il maintenable, sécurisé et performant pour la production ?
+
+5. **Stage 5 : Finalisation & Livraison**  
+   *Action* : Documentation finale, polissage et intégration dans la branche principale.  
+   *Gate 5* : Le livrable répond-il aux critères de validation initiaux du contrat ?
+
+> [!TIP]
+> **Nouveau rôle du dev** : Le développeur ne "pisse" plus du code, il devient un **pilote de flux** dont la principale valeur réside dans sa capacité de **validation** à chaque porte.
+
+### 4. TP Final - Projet Collaboratif Multi-Agents
 
 #### Objectif
 Développer une application complète en orchestrant plusieurs agents IA spécialisés
@@ -212,7 +270,7 @@ Développer une application complète en orchestrant plusieurs agents IA spécia
 - Quel est le vrai gain de productivité ?
 - Quelles nouvelles compétences sont requises ?
 
-### 4. Conclusion de la Formation
+### 5. Conclusion de la Formation
 
 #### Synthèse des 3 jours
 - Jour 1 : Fondements et pratiques

@@ -26,6 +26,7 @@ Ce dossier contient les modules de cours de la formation Vibe Coding (Build - 3 
 - Durée : 7h
 - Contrat de Contexte (6 piliers)
 - IA pour Debug, Optim, Tests, Review
+- Méthode de travail Stage Gate
 - TP Final : Projet Collaboratif Multi-Agents
 - Analyse critique
 

@@ -21,6 +21,11 @@
 3. ✅ Développer efficacement avec les **outils d'assistance au code** : complétion, génération et refactoring
 4. ✅ Assurer la **qualité logicielle** avec l'IA : tests automatisés, revue de code et détection d'anomalies
 5. ✅ Intégrer les agents IA dans le **cycle de vie complet** d'un projet : de l'idée à la production
+6. ✅ Maîtriser le concept de **Contrat de Contexte** et ses 6 piliers
+7. ✅ Utiliser l'IA pour le **débogage, l'optimisation, les tests et la revue de code**
+8. ✅ Présenter la **méthode de travail Stage Gate**
+9. ✅ Orchestrer **plusieurs agents IA** dans un projet collaboratif
+10. ✅ Analyser de manière **critique les limites et opportunités** de l'IA en développement
 
 ## 🛠️ Outils couverts
 
