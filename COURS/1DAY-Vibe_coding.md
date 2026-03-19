@@ -50,6 +50,10 @@ Cette formation s’adresse aux développeur·se·s souhaitant optimiser leur pr
 
 ⚠ **Avertissement : assistance IA vs projet IA**
 
+### Premier TP : vibe coding instinctif
+
+Faire une ToDoApp simple
+
 ### Introduction à Cursor et ses fonctionnalités (30 min)
 - Présentation de Cursor
 - Différences entre Cursor et GitHub Copilot
@@ -80,7 +84,9 @@ Cette formation s’adresse aux développeur·se·s souhaitant optimiser leur pr
     - **Tests** : Alerte sur le TDD avec assistance IA, alerte sur la volonté des LLM de modifier les tests (ou le code) sans validation
     - **Focus points**: compression de contexte, perte d'information, hallucinations, temps de prise en compte des nouveaux fichiers…
 
-**TP** : application simple de TaskList
+### Second TP
+
+Application simple de TaskList : apporter des fonctionnalités supplémentaires
 
 ### Anatomie technique d'un agent (1H30) 
 
@@ -103,6 +109,7 @@ Cette formation s’adresse aux développeur·se·s souhaitant optimiser leur pr
 | Claude-4.6-Sonnet | Medium |  |
 | Composer-1 | Medium | rapide |
 | ChatGPT-Codex-5.3 | Medium |  |
+| Claude-4.6-Haiku | Low | rapide |
 | Kimi K2 | Low | Quasiment gratuit |
 
 #### Liste des uses cases
