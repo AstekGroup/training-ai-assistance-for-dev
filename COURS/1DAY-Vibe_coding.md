@@ -107,23 +107,23 @@ Application simple de TaskList : apporter des fonctionnalités supplémentaires
 | Composer-1.5 | High | plus rapide, performance mal connue |
 | Gemini 3.1 Flash | Medium |  |
 | Claude-4.6-Sonnet | Medium |  |
-| Composer-1 | Medium | rapide |
+| Composer-2 | Medium | rapide |
 | ChatGPT-Codex-5.3 | Medium |  |
 | Claude-4.6-Haiku | Low | rapide |
-| Kimi K2 | Low | Quasiment gratuit |
+| Kimi K2.5 | Low | Quasiment gratuit |
 
 #### Liste des uses cases
 
 | Use case | Mode | Modèle | Commentaire |
 |------|-------------|----------------|-------|
 | Lint, debug simple | debug | Composer-1, Gemini-Flash, Haiku, Kimi K2 | modèles légers |
-| Commit | agent | Composer-1, Gemini-Flash, Haiku, Kimi K2 |  |
-| Lancer un script | agent | Composer-1, Gemini-Flash, Haiku, Kimi K2 |  |
-| Optimiser le code | Plan | Claude-Opus, Gemini-Pro, Composer-1.5 | dérouler avec un modèle léger |
-| Executer les tests | agent | Composer-1, Gemini-Flash, Haiku, Kimi K2 |  |
-| Écrire des tests | agent | Composer-1, Gemini-Flash |  |
-| Développer une fonctionnalité | plan | Composer-1, Claude-Sonnet, Gemini-Flash | Modèles moyens |
-| Développer une epic | plan | Claude-Opus, Gemini-Pro, Composer-1.5 | dérouler avec un modèle moyen |
+| Commit | agent | Composer-2, Gemini-Flash, Haiku, Kimi K2.5 |  |
+| Lancer un script | agent | Composer-2, Gemini-Flash, Haiku, Kimi K2.5 |  |
+| Optimiser le code | Plan | Claude-Opus, Gemini-Pro, Composer-2 | dérouler avec un modèle léger |
+| Executer les tests | agent | Composer-2, Gemini-Flash, Haiku, Kimi K2.5 |  |
+| Écrire des tests | agent | Composer-2, Gemini-Flash |  |
+| Développer une fonctionnalité | plan | Composer-2, Claude-Sonnet, Gemini-Flash | Modèles moyens |
+| Développer une epic | plan | Claude-Opus, Gemini-Pro, Composer-2 | dérouler avec un modèle moyen |
 
 **TP** faire rédiger un AGENTS.md et un SKILL.md pour un agent IA
 

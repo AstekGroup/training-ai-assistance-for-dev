@@ -53,6 +53,35 @@ Agent IA = LLM + Rules + Skills + Contexte + Mode
 - **Contexte** : l'ensemble de la fenêtre de conversation actuelle + systèmes de mémoire court terme/long terme
 - **Contrôle** : Mode plan/edit/ask/debug
 
+![Anatomie technique d'un agent](COURS/Images/agent-ia.jpg)
+
+#### Liste des modèles
+
+| Modèle | Type | Commentaire |
+|------|------|------|
+| Gemini 3.1 Pro | High |  |
+| Claude-Opus-4.6 | High | plus lent mais plus performant |
+| Composer-1.5 | High | plus rapide, performance mal connue |
+| Gemini 3.1 Flash | Medium |  |
+| Claude-4.6-Sonnet | Medium |  |
+| Composer-2 | Medium | rapide |
+| ChatGPT-Codex-5.3 | Medium |  |
+| Claude-4.6-Haiku | Low | rapide |
+| Kimi K2.5 | Low | Quasiment gratuit |
+
+#### Liste des uses cases
+
+| Use case | Mode | Modèle | Commentaire |
+|------|-------------|----------------|-------|
+| Lint, debug simple | debug | Composer-1, Gemini-Flash, Haiku, Kimi K2 | modèles légers |
+| Commit | agent | Composer-2, Gemini-Flash, Haiku, Kimi K2.5 |  |
+| Lancer un script | agent | Composer-2, Gemini-Flash, Haiku, Kimi K2.5 |  |
+| Optimiser le code | Plan | Claude-Opus, Gemini-Pro, Composer-2 | dérouler avec un modèle léger |
+| Executer les tests | agent | Composer-2, Gemini-Flash, Haiku, Kimi K2.5 |  |
+| Écrire des tests | agent | Composer-2, Gemini-Flash |  |
+| Développer une fonctionnalité | plan | Composer-2, Claude-Sonnet, Gemini-Flash | Modèles moyens |
+| Développer une epic | plan | Claude-Opus, Gemini-Pro, Composer-2 | dérouler avec un modèle moyen |
+
 #### Le drift : perte de qualité dans le temps
 
 Au plus le contexte est long, au plus le LLM a de mal à retrouver les informations pertinentes
