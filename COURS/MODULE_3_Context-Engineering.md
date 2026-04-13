@@ -7,6 +7,7 @@
 
 ## 🎯 Objectifs pédagogiques
 
+- Maîtriser le concept de harness engineering
 - Maîtriser le concept de Contrat de Contexte et ses 6 piliers
 - Utiliser l'IA pour le débogage, l'optimisation, les tests et la revue de code
 - Présenter la méthode de travail Stage Gate
@@ -19,7 +20,7 @@
 
 | Horaire | Module | Durée | Contenu |
 |:--------|:-------|:------|:--------|
-| **9h15 - 10h15** | **Le Contrat de Contexte** | 60min | Context Engineering, 6 piliers, template contrat de contexte |
+| **9h15 - 10h15** | **Harness Engineering & Contrat de Contexte** | 60min | Harness Engineering, Contrat de contexte, template contrat de contexte |
 | **10h15 - 10h30** | **☕ PAUSE** | 15min | |
 | **10h00 - 12h30** | **IA : Debug, Optim, Tests, Review** | 150min | IA pour débogage, optimisation code, génération tests, revue code, exercice pratique |
 | **12h30 - 13h30** | **🍽️ PAUSE DÉJEUNER** | 60min | |
@@ -31,12 +32,23 @@
 
 ## 📚 Contenu détaillé
 
-### 1. Le Contrat de Contexte
+### 1. Harness Engineering & Contrat de Contexte
+
+#### 1.1 Harness Engineering
+
+Le harness engineering est l'art de créer un environnement de travail pour les agents IA. 
+Il permet de s'assurer que l'agent IA comprend bien le contexte et qu'il peut fournir des résultats précis, pertinents et utiles.
+
+C'est la capacité à orienter l'IA pour qu'elle produise des résultats pertinents et utiles. C'est l'équivalent de la capacité à conduire une voiture.
+
+#### 1.2 Le Contrat de Contexte
 
 Le contrat de contexte est un document qui permet de définir le contexte dans lequel le ou les agents IA doivent travailler. 
 Il permet de s'assurer que l'agent IA comprend bien le contexte et qu'il peut fournir des résultats précis, pertinents et utiles.
 
-#### Les 6 Piliers du Contrat de Contexte
+C'est l'équivalent de savoir entretenir sa voiture, faire le plein, vérifier les pneus, faire des pauses, utiliser son GPS, etc.
+
+##### Les 6 Piliers du Contrat de Contexte
 
 1. **Rôle** : Définir le rôle de l'agent IA  
    *"Tu es un architecte logiciel senior spécialisé en Clean Architecture"*
@@ -56,7 +68,7 @@ Il permet de s'assurer que l'agent IA comprend bien le contexte et qu'il peut fo
 6. **Validation** : Critères de succès  
    *"Respect patterns SOLID, tests >80%, documentation complète"*
 
-#### Template de Contrat de Contexte
+##### Template de Contrat de Contexte
 ```markdown
 ## CONTRAT DE CONTEXTE [NOM DE L'AGENT]
 
