@@ -47,4 +47,4 @@ Développeurs expérimentés, architectes, tech leads avec projet d'entreprise.
 ---
 
 **Contact** : Philippe Pary (philippe.pary@astek.net)  
-**Mise à jour** : 26 novembre 2025
+**Mise à jour** : 13 avril 2026
