@@ -36,6 +36,8 @@
 - 💻 Codex : [https://openai.com/blog/openai-codex](https://openai.com/blog/openai-codex)
 - ▶️ Continue : [https://continue.dev](https://continue.dev)
 - 🌊 WindSurf : [https://codeium.com/windsurf](https://codeium.com/windsurf)
+- 📄 AGENTS.md : [https://agents.md](AGENTS.md)
+- 🛠️ AgentSkills : [https://agentskills.io/home](https://agentskills.io/home)
 - 🔌 MCP (Model Context Protocol) : [https://modelcontextprotocol.io](https://modelcontextprotocol.io)
 - 📋 SpecKit : [https://speckit.ai](https://speckit.ai)
 - 📖 OpenSpec : [https://openspec.ai](https://openspec.ai)
