@@ -71,8 +71,8 @@ Il existe des cursus de formations dédiés aux projets IA, n'hésitez pas à me
 
 - Phase 1 : Thinking - Conception assistée par IA
 - Phase 2 : Prompting - Génération du code
-- Phase 3 : Tools - Utilisation de Cursor/Claude Code
-- Phase 4 : Context - Gestion de l'état et de la mémoire
+- Phase 3 : Tools - Utilisation des outils de l'IA : recherche web, playwright/browser intégré, ligne de commande …
+- Phase 4 : Context - Gestion efficace des sessions de chat et du contexte
 - Phase 5 : Review - Validation et amélioration
 
 ### 5. Git + IA pour Équipes
