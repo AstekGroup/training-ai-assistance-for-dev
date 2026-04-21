@@ -58,57 +58,53 @@ Il existe des cursus de formations dédiés aux projets IA, n'hésitez pas à me
 - **Review** : Revue critique et validation
 
 ### 3. Prompt Engineering Entreprise
+- N'utilisez pas de rôle (*tu es un expert Angular*) : l'agent le sait déjà, c'est même contre-productif (tâches nécessitant plusieurs expertises)
 - Favorisez les prompts précis (limiter le drift)
 - Premier prompt est essentiel, prenez le temps de préciser vos besoins
 - Relisez attentivement le plan proposé par l'agent, vous gagnerez du temps
 - Indiquez vos contraintes business et conformité (RGPD, sécurité)
-- Utilisez les techniques de structuration (Chain-of-Thought, Few-Shot)
 - Validation du code généré : relisez attentivement le code généré, vous gagnerez du temps
 - Rouvrez une nouvelle fenêtre de conversation après chaque fonctionnalité majeure ou à la fin d'un plan
 
 ### 4. Exercice Guidé : Todo App Progressive
-**Objectif** : Développer une application Todo en appliquant les 5 compétences
+Développer une application Todo en appliquant les 5 compétences
 
-- Phase 1 : Thinking - Conception assistée par IA
-- Phase 2 : Prompting - Génération du code
-- Phase 3 : Tools - Utilisation des outils de l'IA : recherche web, playwright/browser intégré, ligne de commande …
-- Phase 4 : Context - Gestion efficace des sessions de chat et du contexte
-- Phase 5 : Review - Validation et amélioration
+**Objectif** : premier contact avec votre outil de vibe-coding
 
 ### 5. Git + IA pour Équipes
-- .gitignore est respecté par défaut par les IDE de vibe-coding
 - **commitez souvent**, créez vous des points de retour en arrière si votre agent a fait fausse piste
-- **respectez le gitworkflow même si vous travaillez en solo**, vous pouvez utiliser des branches pour chaque fonctionnalité, ce qui permet de lancer plusieurs agents en parallèle 
-- Workflows collaboratifs avec IA
-- Gestion des conflits assistée
-- Code reviews automatisées
-- Convention de commits avec IA
-- Preview : agents IA pour coordination d'équipe (J2)
+- **respectez le gitworkflow même si vous travaillez en solo**, vous pouvez utiliser des branches pour chaque fonctionnalité, ce qui permet de lancer plusieurs agents en parallèle
+- Utilisez `gh` ou `glab` en ligne de commande, favorisez ces outils au serveurs MCP (pollution de contexte, latence, etc.) 
+- Workflows collaboratifs avec IA : les agents IA gèrent sans difficulté l'existence de multiples branches et les Pull Requests/Merge Requests
+- Gestion des conflits assistée : les agents IA peuvent aider à résoudre les conflits en présentant les conflits par thématique et en proposant des plans de résolution
+- Code reviews automatisées : les agents IA peuvent aider à identifier les problèmes potentiels et à proposer des améliorations
+- Convention de commits avec IA : les agents IA peuvent aider à générer des messages de commit conforme aux règles du projet
 
 ### 6. Exercices Pratiques
+**Objectif**: utiliser un peu plus votre agent de vibe-coding, utiliser git avec votre agent IA
 
-#### Exercice 1 : Blog Statique
+#### Exemple 1 : Blog Statique
 Créer un générateur de blog statique avec IA  
 **Livrables** : Site fonctionnel, générateur de contenu
 
-#### Exercice 2 : Dashboard Simple
+#### Exemple 2 : Dashboard Simple
 Tableau de bord avec visualisation de données  
 **Livrables** : Dashboard interactif, graphiques
 
-#### Exercice 3 : API CRUD
+#### Exemple 3 : API CRUD
 API REST complète avec base de données  
 **Livrables** : API fonctionnelle, documentation Swagger
 
-#### Exercice 4 : Générer la Documentation
-Trouver un prompt efficace pour générer une documentation uniformisée pour les projets précédents.
+#### Exemple 4 : Générer la Documentation
+Trouver un prompt efficace pour générer une documentation uniformisée pour les projets déjà existants
 **Livrables** : Documentation générée, templates réutilisables
 
-#### Exercice 5 : Tests
-Rédiger des tests pour les projets précédents.
+#### Exemple 5 : Tests
+Rédiger des tests pour les projets déjà existants.
 **Livrables** : Tests unitaires, tests d'intégration, tests de performance, tests de sécurité et cahier de recette pour les tests fonctionnels
 
-#### Exercice 6 : Optimisation
-Optimiser les projets précédents pour améliorer les performances.
+#### Exemple 6 : Optimisation
+Optimiser les projets déjà existants pour améliorer les performances.
 **Livrables** : Factorisation, audit de sécurité, rapport de performance, audit d'accessibilité
 
 ### 7. Bonnes Pratiques Entreprise
