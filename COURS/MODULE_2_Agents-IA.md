@@ -60,27 +60,26 @@ Agent IA = LLM + Rules + Skills + Contexte + Mode
 | Modèle | Type | Commentaire |
 |------|------|------|
 | Gemini 3.1 Pro | High |  |
-| Claude-Opus-4.6 | High | plus lent mais plus performant |
-| Composer-1.5 | High | plus rapide, performance mal connue |
+| Claude-Opus-4.7 | High | meilleur modèle à l'heure actuelle |
 | Gemini 3.1 Flash | Medium |  |
 | Claude-4.6-Sonnet | Medium |  |
-| Composer-2 | Medium | rapide |
-| ChatGPT-Codex-5.3 | Medium |  |
-| Claude-4.6-Haiku | Low | rapide |
-| Kimi K2.5 | Low | Quasiment gratuit |
+| Composer-2 | Medium | rapide | Spécifique à Cursor, excellent rapport qualité/prix 
+| Claude-4.6-Haiku | léger | rapide mais peu doué |
+| Mistral | léger | Solution souveraine au rapport qualité/coût avantageux |
+| Kimi K2.5 | léger | Quasiment gratuit |
 
 #### Liste des uses cases
 
-| Use case | Mode | Modèle | Commentaire |
-|------|-------------|----------------|-------|
-| Lint, debug simple | debug | Composer-1, Gemini-Flash, Haiku, Kimi K2 | modèles légers |
-| Commit | agent | Composer-2, Gemini-Flash, Haiku, Kimi K2.5 |  |
-| Lancer un script | agent | Composer-2, Gemini-Flash, Haiku, Kimi K2.5 |  |
-| Optimiser le code | Plan | Claude-Opus, Gemini-Pro, Composer-2 | dérouler avec un modèle léger |
-| Executer les tests | agent | Composer-2, Gemini-Flash, Haiku, Kimi K2.5 |  |
-| Écrire des tests | agent | Composer-2, Gemini-Flash |  |
-| Développer une fonctionnalité | plan | Composer-2, Claude-Sonnet, Gemini-Flash | Modèles moyens |
-| Développer une epic | plan | Claude-Opus, Gemini-Pro, Composer-2 | dérouler avec un modèle moyen |
+| Use case | Mode | Commentaire |
+|------|-------------|-------|
+| Lint, debug simple | debug | modèles légers |
+| Commit | agent | modèles légers |
+| Lancer un script | agent | selon le cas. Modèle léger pour juste avoir un résultat, utiliser un modèle moyen ou high si besoin d'actions immédiates |
+| Optimiser le code | Plan | utiliser un modèle high, dérouler avec un modèle léger |
+| Executer les tests | agent | selon le cas. Modèle léger pour juste avoir un résultat, utiliser un modèle moyen ou high si besoin d'actions immédiates |
+| Écrire des tests | agent | modèles moyens |
+| Développer une fonctionnalité | plan | modèles moyens |
+| Développer une epic | plan | Modèle high puis dérouler avec un modèle moyen |
 
 #### Le drift : perte de qualité dans le temps
 
@@ -185,7 +184,3 @@ Voir le site web https://bmadcodes.com/ pour plus de détails.
 - Installer BMAD
 - lancer le processus BMAD
 - étudier les résultats
-
----
-
-**Prochaine étape** : Jour 3 - Context Engineering et Projet Final

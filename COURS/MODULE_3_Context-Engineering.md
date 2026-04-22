@@ -1,4 +1,4 @@
-# MODULE 3 : Context Engineering et Projet Final
+# MODULE 3 : Harness Engineering,Context Engineering et Projet Final
 
 **Durée** : 1 journée (7h)  
 **Objectifs** : Maîtriser le Context Engineering, utiliser l'IA pour le cycle complet de développement et réaliser un projet collaboratif final
@@ -8,7 +8,7 @@
 ## 🎯 Objectifs pédagogiques
 
 - Maîtriser le concept de harness engineering
-- Maîtriser le concept de Contrat de Contexte et ses 6 piliers
+- Maîtriser le concept de Contrat de Contexte et ses 5 piliers
 - Utiliser l'IA pour le débogage, l'optimisation, les tests et la revue de code
 - Présenter la méthode de travail Stage Gate
 - Orchestrer plusieurs agents IA dans un projet collaboratif
@@ -46,34 +46,32 @@ C'est la capacité à orienter l'IA pour qu'elle produise des résultats pertine
 Le contrat de contexte est un document qui permet de définir le contexte dans lequel le ou les agents IA doivent travailler. 
 Il permet de s'assurer que l'agent IA comprend bien le contexte et qu'il peut fournir des résultats précis, pertinents et utiles.
 
+C'est un livrable projet. Il sert de référence entre les différentes parties prenantes du projets.
+
+Il peut servir de base à un AGENTS.md mais ce n'est pas sa vocation première. Certaines informations du contrat de contexte peuvent n'avoir aucune pertinence pour l'agent IA, notamment dans le cas des projets multi-repositories.
+
 C'est l'équivalent de savoir entretenir sa voiture, faire le plein, vérifier les pneus, faire des pauses, utiliser son GPS, etc.
 
-##### Les 6 Piliers du Contrat de Contexte
+##### Les 5 Piliers du Contrat de Contexte
 
-1. **Rôle** : Définir le rôle de l'agent IA  
-   *"Tu es un architecte logiciel senior spécialisé en Clean Architecture"*
-
-2. **Objectif** : Clarifier l'objectif attendu  
+1. **Objectif** : Clarifier l'objectif attendu  
    *"Concevoir une architecture microservices pour une application e-commerce"*
 
-3. **Contraintes** : Spécifier les limitations et exigences  
+2. **Contraintes** : Spécifier les limitations et exigences  
    *"Stack: Python/FastAPI, Cloud: AWS, Budget: limité, Skills: Architect-Scheme-Designer"*
 
-4. **Contexte** : Fournir le contexte projet  
+3. **Contexte** : Fournir le contexte projet  
    *"Projet existant en monolithe, 50k utilisateurs/jour, équipe de 2 devs + un architecte"*
 
-5. **Format** : Définir le format de sortie attendu  
+4. **Format** : Définir le format de sortie attendu  
    *"Diagramme C4, fichiers de config, ADR"*
 
-6. **Validation** : Critères de succès  
+5. **Validation** : Critères de succès  
    *"Respect patterns SOLID, tests >80%, documentation complète"*
 
 ##### Template de Contrat de Contexte
 ```markdown
 ## CONTRAT DE CONTEXTE [NOM DE L'AGENT]
-
-### Rôle
-[Définition du rôle de l'agent]
 
 ### Objectif
 [But précis à atteindre]
@@ -273,15 +271,6 @@ Développer une application complète en orchestrant plusieurs agents IA spécia
    - Détection d'anomalies
    - Prédiction de pannes
 
-#### Analyse critique (incluse dans la phase 3)
-
-**Points à analyser**
-- Où l'IA a excellé ?
-- Où l'IA a échoué ou était limitée ?
-- Qu'est-ce qui aurait été plus rapide manuellement ?
-- Quel est le vrai gain de productivité ?
-- Quelles nouvelles compétences sont requises ?
-
 ### 5. Conclusion de la Formation
 
 #### Synthèse des 3 jours
@@ -291,7 +280,3 @@ Développer une application complète en orchestrant plusieurs agents IA spécia
 
 #### Évaluation
 - Questionnaire de satisfaction
-
----
-
-**Félicitations ! Vous êtes maintenant expert en Vibe Coding et développement agentique** 🎉
