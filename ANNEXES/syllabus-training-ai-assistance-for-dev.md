@@ -10,7 +10,7 @@
 | **👥 Public** | Tout développeur informatique, testeur, QA, architecte de tout niveau |
 | **💪 Pré-requis** | Connaissances de base en programmation, IDE Antigravity, Git |
 | **👤 Contact** | Philippe Pary (philippe.pary@astek.net) |
-| **🔄 Mise à jour** | 25 novembre 2025 |
+| **🔄 Mise à jour** | 29 avril 2026 |
 
 ---
 
@@ -24,29 +24,34 @@
 
 ## 📚 Structure de la formation
 
-### Jour 1 : Fondements et Prompt Engineering Avancé
+La formation est découpée en **6 modules** (2 demi-journées par jour). Le détail pédagogique (planning, contenu) est dans le dossier `COURS/`.
 
-- Introduction au Vibe Coding et méthodologie
-- Prompt engineering avancé : techniques et patterns
-- Découverte des outils : Claude Code, Cursor, GitHub Copilot
-- Context engineering : gérer efficacement le contexte
-- **TP Pratique** : Premier projet en Vibe Coding
+### Jour 1
 
-### Jour 2 : Agents IA et Développement Collaboratif
+| Module | Intitulé (verbe d’action) | Contenu clé |
+| :--- | :--- | :--- |
+| **1** | **Structurer** le Vibe Coding et le prompt engineering en contexte entreprise | Introduction, 5 compétences, prompt métier, exercice guidé Todo |
+| **2** | **Intensifier** la pratique — outillage, Git d’équipe, labs et garde-fous | Panorama IDE, Git + IA, mini-projets, bonnes pratiques, challenge overnight |
 
-- Architecture et orchestration d'agents IA
-- Model Context Protocol (MCP) et intégrations
-- Outils d'agents : Continue, WindSurf, A2A
-- Collaboration humain-IA dans le cycle de développement
-- **TP Pratique** : Développement avec agents multiples
+### Jour 2
 
-### Jour 3 : Qualité, Spécifications et Production
+| Module | Intitulé (verbe d’action) | Contenu clé |
+| :--- | :--- | :--- |
+| **3** | **Concevoir** la stack agent — anatomie, Rules, Skills et premières intégrations MCP | Retour challenge, théorie agents, TP Rules / Skills / MCP |
+| **4** | **Industrialiser** les agents — MCP avancé, sécurité opérationnelle et méthode BMAD | MCP et skills en profondeur, sécurité agents, BMAD-METHOD |
 
-- Génération de spécifications avec SpecKit et OpenSpec
-- Tests automatisés et revue de code assistée par IA
-- Architecture et conception avec BDMAD
-- Bonnes pratiques et patterns de développement
-- **TP Final** : Projet complet de bout en bout
+### Jour 3
+
+| Module | Intitulé (verbe d’action) | Contenu clé |
+| :--- | :--- | :--- |
+| **5** | **Cadrer** le développement assisté — harness, contrat de contexte et qualité sur le cycle | Harness, contrat de contexte, debug / optim / tests / review avec l’IA |
+| **6** | **Pratiquer** des méthodes de travail adaptées | Stage gate, **TP final** multi-agents, synthèse et évaluation |
+
+### Thèmes transverses (référence rapide)
+
+- **Jour 1** : fondements Vibe Coding, prompt engineering, outils, Git, premiers livrables.
+- **Jour 2** : agents, MCP, sécurité, méthode BMAD, collaboration humain-IA.
+- **Jour 3** : contexte / harness, qualité sur le cycle de dev, SpecKit / OpenSpec selon besoins client, TP de synthèse.
 
 ---
 

@@ -23,11 +23,14 @@ Il s'agit du dépôt de la formation "Vibe Coding : Outils IA pour Développeurs
 ```
 /
 ├── ANNEXES/            # Syllabus et documents administratifs (PDF, MD)
-├── COURS/              # Contenus théoriques par modules (Markdown)
+├── COURS/              # Contenus théoriques par modules (Markdown), 6 modules sur 3 jours
 │   ├── Images/         # Assets visuels des cours (schémas, captures)
-│   ├── MODULE_1_...    # Fondements et Prompt Engineering Avancé
-│   ├── MODULE_2_...    # Agents IA et Développement Collaboratif
-│   └── MODULE_3_...    # Context Engineering et Qualité
+│   ├── MODULE_1_...    # J1 matin — Structurer (Vibe Coding, prompt)
+│   ├── MODULE_2_...    # J1 pm — Intensifier (outillage, Git, labs)
+│   ├── MODULE_3_...    # J2 matin — Concevoir (agents, MCP socle)
+│   ├── MODULE_4_...    # J2 pm — Industrialiser (MCP, sécu, BMAD)
+│   ├── MODULE_5_...    # J3 matin — Cadrer (harness, contrat, qualité)
+│   └── MODULE_6_...    # J3 pm — Pratiquer (stage gate, TP final)
 ├── AGENTS.md           # Instructions pour les agents IA (ce fichier)
 ├── README.md           # Documentation principale de la formation
 ├── README.pdf          # Version PDF du README
@@ -62,23 +65,26 @@ Ce dépôt est conçu autour de la méthodologie "Vibe Coding" :
 
 ## Matériaux de cours
 
-### Modules de formation (3 jours)
+### Modules de formation (3 jours, 6 demi-journées)
 
-- **Dossier** : [`COURS/`](./COURS/)
-- **Syllabus** : Contenus détaillés dans le dossier [`ANNEXES/`](./ANNEXES/).
-- **Visionneuse** : Fichier [`cours-viewer.html`](./cours-viewer.html) pour la lecture des contenus. ⚠ à lancer avec un serveur HTTP local (ex: `python -m http.server`) ⚠
+- **Dossier** : `[COURS/](./COURS/)`
+- **Syllabus** : Contenus détaillés dans le dossier `[ANNEXES/](./ANNEXES/)`.
+- **Visionneuse** : Fichier `[cours-viewer.html](./cours-viewer.html)` pour la lecture des contenus. ⚠ à lancer avec un serveur HTTP local (ex: `python -m http.server`) ⚠
 
-#### Jour 1 : Fondements et Prompt Engineering Avancé
-- **Fichier** : [`COURS/MODULE_1_Fondements-Avances.md`](./COURS/MODULE_1_Fondements-Avances.md)
-- **Focus** : Les 5 compétences du Vibe Coding, Prompt Engineering entreprise, workflows Git.
+#### Jour 1
 
-#### Jour 2 : Agents IA et Développement Collaboratif
-- **Fichier** : [`COURS/MODULE_2_Agents-IA.md`](./COURS/MODULE_2_Agents-IA.md)
-- **Focus** : Architecture d'agents, orchestration, MCP, développement agentique.
+- **Module 1** — `[COURS/MODULE_1_Structurer-Vibe-Coding-Prompt.md](./COURS/MODULE_1_Structurer-Vibe-Coding-Prompt.md)` : Vibe Coding, 5 compétences, prompt engineering entreprise, exercice guidé.
+- **Module 2** — `[COURS/MODULE_2_Intensifier-Pratique-Outils-Git.md](./COURS/MODULE_2_Intensifier-Pratique-Outils-Git.md)` : outillage, Git + IA, labs, bonnes pratiques, challenge overnight.
 
-#### Jour 3 : Context Engineering et Qualité
-- **Fichier** : [`COURS/MODULE_3_Context-Engineering.md`](./COURS/MODULE_3_Context-Engineering.md)
-- **Focus** : Gestion avancée du contexte, tests automatisés avec IA, revue de code.
+#### Jour 2
+
+- **Module 3** — `[COURS/MODULE_3_Concevoir-stack-agent-MCP.md](./COURS/MODULE_3_Concevoir-stack-agent-MCP.md)` : anatomie d’agent, Rules, Skills, premier MCP.
+- **Module 4** — `[COURS/MODULE_4_Industrialiser-agents-MCP-securite-BMAD.md](./COURS/MODULE_4_Industrialiser-agents-MCP-securite-BMAD.md)` : MCP avancé, sécurité des agents, BMAD-METHOD.
+
+#### Jour 3
+
+- **Module 5** — `[COURS/MODULE_5_Cadrer-developpement-harness-qualite.md](./COURS/MODULE_5_Cadrer-developpement-harness-qualite.md)` : harness, contrat de contexte, debug / tests / review assistés.
+- **Module 6** — `[COURS/MODULE_6_Pratiquer-methodes-travail-adaptees.md](./COURS/MODULE_6_Pratiquer-methodes-travail-adaptees.md)` : stage gate, TP final multi-agents, conclusion.
 
 ## Directives de développement
 
@@ -86,7 +92,7 @@ Ce dépôt est conçu autour de la méthodologie "Vibe Coding" :
 
 - Préserver la structure pédagogique lors des modifications
 - Conserver la documentation en français car il s'agit d'un programme de formation français
-- Respecter la difficulté progressive entre les modules (Jour 1 → Jour 2 → Jour 3)
+- Respecter la difficulté progressive entre les modules (J1 → J2 → J3, modules 1 à 6)
 - Mettre à jour les numéros de version et les dates lors de changements significatifs
 
 ### Modifications de fichiers

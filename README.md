@@ -4,13 +4,19 @@
 
 ---
 
-| ℹ️ Informations         | Détails                                                               |
-| :------------------------ | :--------------------------------------------------------------------- |
-| **📅 Durée**       | 3 jours                                                                |
-| **👥 Public**       | Tout développeur informatique, testeur, QA, architecte de tout niveau |
-| **💪 Pré-requis**  | Connaissances de base en programmation, IDE Antigravity, git, npm ou python          |
-| **👤 Contact**      | Philippe Pary (philippe.pary@astek.net)                                |
-| **🔄 Mise à jour** | 21 avril 2026                                                       |
+
+| ℹ️ Informations    | Détails                                                                     |
+| ------------------ | --------------------------------------------------------------------------- |
+| **📅 Durée**       | 3 jours                                                                     |
+| **👥 Public**      | Tout développeur informatique, testeur, QA, architecte de tout niveau       |
+| **💪 Pré-requis**  | Connaissances de base en programmation, IDE Antigravity, git, npm ou python |
+| **👤 Contact**     | Philippe Pary ([philippe.pary@astek.net](mailto:philippe.pary@astek.net))   |
+| **🔄 Mise à jour** | 29 avril 2026                                                               |
+
+
+---
+
+Le parcours **3 jours** est découpé en **6 modules** (demi-journées) : détail dans `[COURS/README.md](./COURS/README.md)`.
 
 ---
 
@@ -21,7 +27,7 @@
 3. ✅ Développer efficacement avec les **outils d'assistance au code** : complétion, génération et refactoring
 4. ✅ Assurer la **qualité logicielle** avec l'IA : tests automatisés, revue de code et détection d'anomalies
 5. ✅ Intégrer les agents IA dans le **cycle de vie complet** d'un projet : de l'idée à la production
-6. ✅ Maîtriser le concept de **harness engineering** et de **Contrat de Contexte** 
+6. ✅ Maîtriser le concept de **harness engineering** et de **Contrat de Contexte**
 7. ✅ Utiliser l'IA pour le **débogage, l'optimisation, les tests et la revue de code**
 8. ✅ Orchestrer la **méthode de travail Stage Gate**
 

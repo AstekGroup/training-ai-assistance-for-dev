@@ -10,7 +10,7 @@
 | **👥 Audience** | Any software developer, tester, QA, architect of any level |
 | **💪 Prerequisites** | Basic programming knowledge, Antigravity IDE, Git |
 | **👤 Contact** | Philippe Pary (philippe.pary@astek.net) |
-| **🔄 Last Updated** | November 25, 2025 |
+| **🔄 Last Updated** | April 29, 2026 |
 
 ---
 
@@ -24,29 +24,34 @@
 
 ## 📚 Training Structure
 
-### Day 1: Fundamentals and Advanced Prompt Engineering
+The course is organized into **six modules** (two half-days per day). Detailed timings and content live in the `COURS/` folder.
 
-- Introduction to Vibe Coding and methodology
-- Advanced prompt engineering: techniques and patterns
-- Tool discovery: Claude Code, Cursor, GitHub Copilot
-- Context engineering: effectively managing context
-- **Hands-on Lab**: First Vibe Coding project
+### Day 1
 
-### Day 2: AI Agents and Collaborative Development
+| Module | Title (action verb) | Key topics |
+| :--- | :--- | :--- |
+| **1** | **Structure** Vibe Coding and enterprise prompt engineering | Introduction, five competencies, business prompts, guided Todo exercise |
+| **2** | **Intensify** practice — tooling, team Git, labs, and guardrails | IDE landscape, Git + AI, mini-projects, best practices, overnight challenge |
 
-- AI agent architecture and orchestration
-- Model Context Protocol (MCP) and integrations
-- Agent tools: Continue, WindSurf, A2A
-- Human-AI collaboration in the development cycle
-- **Hands-on Lab**: Multi-agent development
+### Day 2
 
-### Day 3: Quality, Specifications, and Production
+| Module | Title (action verb) | Key topics |
+| :--- | :--- | :--- |
+| **3** | **Design** the agent stack — anatomy, Rules, Skills, first MCP integrations | Challenge debrief, agent theory, Rules / Skills / MCP workshop |
+| **4** | **Industrialize** agents — advanced MCP, operational security, BMAD method | Deeper MCP and skills, agent security, BMAD-METHOD |
 
-- Specification generation with SpecKit and OpenSpec
-- Automated testing and AI-assisted code review
-- Architecture and design with BDMAD
-- Best practices and development patterns
-- **Final Lab**: End-to-end complete project
+### Day 3
+
+| Module | Title (action verb) | Key topics |
+| :--- | :--- | :--- |
+| **5** | **Frame** assisted development — harness, context contract, quality across the lifecycle | Harness engineering, context contract, AI-assisted debug / optimize / test / review |
+| **6** | **Practice** adapted working methods | Stage gate, **final capstone** multi-agent lab, wrap-up and evaluation |
+
+### Cross-day themes
+
+- **Day 1**: Vibe Coding foundations, prompt engineering, tools, Git, first deliverables.
+- **Day 2**: Agents, MCP, security, BMAD, human–AI collaboration.
+- **Day 3**: context / harness, quality across the dev cycle, SpecKit / OpenSpec as needed, synthesis lab.
 
 ---
 
