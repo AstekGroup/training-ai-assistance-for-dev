@@ -46,8 +46,6 @@ Ce document fournit au formateur des grilles d'évaluation standardisées pour o
 
 - Maîtriser le framework des 5 compétences du Vibe Coding.
 - Appliquer le prompt engineering aux contraintes d'entreprise.
-- Distinguer assistance IA et projet IA.
-
 
 | Critère                                                                              | Acquis | Commentaire formateur |
 | ------------------------------------------------------------------------------------ | ------ | --------------------- |
