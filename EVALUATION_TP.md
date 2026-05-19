@@ -25,14 +25,16 @@ Ce document fournit au formateur des grilles d'évaluation standardisées pour o
 
 ## Identification de l'apprenant
 
-| Champ              | Valeur |
-| ------------------ | ------ |
-| Nom / Prénom       |        |
-| Société / Équipe   |        |
-| Date d'évaluation  |        |
-| Formateur          |        |
+
+| Champ                    | Valeur |
+| ------------------------ | ------ |
+| Nom / Prénom             |        |
+| Société / Équipe         |        |
+| Date d'évaluation        |        |
+| Formateur                |        |
 | Lab / projet choisi (M2) |        |
 | Projet final choisi (M6) |        |
+
 
 ---
 
@@ -46,21 +48,21 @@ Ce document fournit au formateur des grilles d'évaluation standardisées pour o
 - Appliquer le prompt engineering aux contraintes d'entreprise.
 - Distinguer assistance IA et projet IA.
 
-| Critère                                                                                  | Acquis | Commentaire formateur |
-| ---------------------------------------------------------------------------------------- | :----: | --------------------- |
-| Thinking : raisonnement structuré avant le premier prompt                                | [ ]    |                       |
-| Prompting : premier prompt précis, contraintes métier explicites (stack, conformité)     | [ ]    |                       |
-| Tools : usage maîtrisé de l'IDE agentique (modes, navigation, agent)                     | [ ]    |                       |
-| Context : gestion de la fenêtre de conversation, reset après feature majeure             | [ ]    |                       |
-| Review : relecture critique du plan agent et validation humaine du code généré           | [ ]    |                       |
-| Évite les rôles génériques contre-productifs (« tu es un expert X »)                     | [ ]    |                       |
-| Todo app progressive livrée et fonctionnelle                                             | [ ]    |                       |
+
+| Critère                                                                              | Acquis | Commentaire formateur |
+| ------------------------------------------------------------------------------------ | ------ | --------------------- |
+| Thinking : raisonnement structuré avant le premier prompt                            | [ ]    |                       |
+| Prompting : premier prompt précis, contraintes métier explicites (stack, conformité) | [ ]    |                       |
+| Context : gestion de la fenêtre de conversation, reset après feature majeure         | [ ]    |                       |
+| Review : relecture critique du plan agent et validation humaine du code généré       | [ ]    |                       |
+| Todo app progressive livrée et fonctionnelle                                         | [ ]    |                       |
+
 
 **Niveau global du module 1** : `[ ]` Acquis  `[ ]` Non acquis
 
 **Commentaire de synthèse** :
 
->
+
 
 ---
 
@@ -74,20 +76,22 @@ Ce document fournit au formateur des grilles d'évaluation standardisées pour o
 - Mettre en place des pratiques Git compatibles multi-agents et revue.
 - Appliquer des garde-fous entreprise (sécurité, perf, architecture, tests).
 
-| Critère                                                                                   | Acquis | Commentaire formateur |
-| ----------------------------------------------------------------------------------------- | :----: | --------------------- |
-| Livrable du lab fonctionnel et conforme aux attendus du sujet choisi                      | [ ]    |                       |
-| Commits fréquents permettant des points de retour en cas de dérive de l'agent             | [ ]    |                       |
-| Branches par fonctionnalité et conventions de commits respectées                          | [ ]    |                       |
-| Usage `gh` / `glab` en CLI à bon escient (vs surcouche MCP)                               | [ ]    |                       |
-| Garde-fous OWASP / sécurité pris en compte sur le livrable                                | [ ]    |                       |
-| Prise en compte performance / Clean Architecture selon le sujet                           | [ ]    |                       |
+
+| Critère                                                                       | Acquis | Commentaire formateur |
+| ----------------------------------------------------------------------------- | ------ | --------------------- |
+| Livrable du lab fonctionnel et conforme aux attendus du sujet choisi          | [ ]    |                       |
+| Commits fréquents permettant des points de retour en cas de dérive de l'agent | [ ]    |                       |
+| Branches par fonctionnalité et conventions de commits respectées              | [ ]    |                       |
+| Usage `gh` / `glab` en CLI à bon escient (vs surcouche MCP)                   | [ ]    |                       |
+| Garde-fous OWASP / sécurité pris en compte sur le livrable                    | [ ]    |                       |
+| Prise en compte performance / Clean Architecture selon le sujet               | [ ]    |                       |
+
 
 **Niveau global du module 2** : `[ ]` Acquis  `[ ]` Non acquis
 
 **Commentaire de synthèse** :
 
->
+
 
 ---
 
@@ -101,19 +105,21 @@ Ce document fournit au formateur des grilles d'évaluation standardisées pour o
 - Configurer un fichier `AGENTS.md`, des skills et un serveur MCP de base.
 - Choisir modèle et mode selon le use case.
 
-| Critère                                                                                | Acquis | Commentaire formateur |
-| -------------------------------------------------------------------------------------- | :----: | --------------------- |
-| `AGENTS.md` rédigé, lisible et testé concrètement avec l'agent                         | [ ]    |                       |
-| `SKILL.md` valide, référence la spec agentskills.io, testé avec l'agent                | [ ]    |                       |
-| Serveur MCP choisi, configuré et intégré avec rules / skills                           | [ ]    |                       |
-| MCP testé et résultat exploitable observé                                              | [ ]    |                       |
-| Stratégies anti-drift appliquées (Rules plutôt que prompts longs, reset conversation)  | [ ]    |                       |
+
+| Critère                                                                               | Acquis | Commentaire formateur |
+| ------------------------------------------------------------------------------------- | ------ | --------------------- |
+| `AGENTS.md` rédigé, lisible et testé concrètement avec l'agent                        | [ ]    |                       |
+| `SKILL.md` valide, référence la spec agentskills.io, testé avec l'agent               | [ ]    |                       |
+| Serveur MCP choisi, configuré et intégré avec rules / skills                          | [ ]    |                       |
+| MCP testé et résultat exploitable observé                                             | [ ]    |                       |
+| Stratégies anti-drift appliquées (Rules plutôt que prompts longs, reset conversation) | [ ]    |                       |
+
 
 **Niveau global du module 3** : `[ ]` Acquis  `[ ]` Non acquis
 
 **Commentaire de synthèse** :
 
->
+
 
 ---
 
@@ -126,20 +132,22 @@ Ce document fournit au formateur des grilles d'évaluation standardisées pour o
 - Brancher des serveurs MCP représentatifs (doc, forge, navigateur / tests).
 - Identifier menaces et défenses sur les agents IA.
 
-| Critère                                                                                          | Acquis | Commentaire formateur |
-| ------------------------------------------------------------------------------------------------ | :----: | --------------------- |
-| Périmètre autorisé documenté dans rules / skills (repos, branches, secrets jamais en prompt)     | [ ]    |                       |
-| Identification correcte des menaces (prompt injection, hallucination, data leakage, hijacking)   | [ ]    |                       |
-| Input validation appliquée (filtrage sources, contrôle du code récupéré)                         | [ ]    |                       |
-| Output filtering : relecture humaine du code et des commentaires générés                         | [ ]    |                       |
-| Sandboxing / monitoring envisagés ou mis en place selon le risque                                | [ ]    |                       |
-| Justifie le choix MCP vs CLI (`gh` / `glab`) selon latence, bruit, périmètre                     | [ ]    |                       |
+
+| Critère                                                                                        | Acquis | Commentaire formateur |
+| ---------------------------------------------------------------------------------------------- | ------ | --------------------- |
+| Périmètre autorisé documenté dans rules / skills (repos, branches, secrets jamais en prompt)   | [ ]    |                       |
+| Identification correcte des menaces (prompt injection, hallucination, data leakage, hijacking) | [ ]    |                       |
+| Input validation appliquée (filtrage sources, contrôle du code récupéré)                       | [ ]    |                       |
+| Output filtering : relecture humaine du code et des commentaires générés                       | [ ]    |                       |
+| Sandboxing / monitoring envisagés ou mis en place selon le risque                              | [ ]    |                       |
+| Justifie le choix MCP vs CLI (`gh` / `glab`) selon latence, bruit, périmètre                   | [ ]    |                       |
+
 
 **Niveau global du module 4** : `[ ]` Acquis  `[ ]` Non acquis
 
 **Commentaire de synthèse** :
 
->
+
 
 ---
 
@@ -152,20 +160,22 @@ Ce document fournit au formateur des grilles d'évaluation standardisées pour o
 - Définir un harness engineering opérationnel.
 - Enchaîner debug, perf, tests et review assistés par IA avec validation humaine.
 
-| Critère                                                                                       | Acquis | Commentaire formateur |
-| --------------------------------------------------------------------------------------------- | :----: | --------------------- |
-| Harness en place : règles, outils, périmètre, jeux de tests, documentation minimale           | [ ]    |                       |
-| Débogage assisté : analyse de stack traces, détection de patterns, fix contextualisé          | [ ]    |                       |
-| Optimisation : performance, lisibilité (refactoring, naming), maintenabilité SOLID            | [ ]    |                       |
+
+| Critère                                                                                        | Acquis | Commentaire formateur |
+| ---------------------------------------------------------------------------------------------- | ------ | --------------------- |
+| Harness en place : règles, outils, périmètre, jeux de tests, documentation minimale            | [ ]    |                       |
+| Débogage assisté : analyse de stack traces, détection de patterns, fix contextualisé           | [ ]    |                       |
+| Optimisation : performance, lisibilité (refactoring, naming), maintenabilité SOLID             | [ ]    |                       |
 | Génération de tests pertinents (unitaires / intégration / e2e) avec données de test cohérentes | [ ]    |                       |
-| Revue de code assistée : conventions, OWASP, performance, maintenabilité, documentation       | [ ]    |                       |
-| Validation humaine effective à chaque étape du cycle                                          | [ ]    |                       |
+| Revue de code assistée : conventions, OWASP, performance, maintenabilité, documentation        | [ ]    |                       |
+| Validation humaine effective à chaque étape du cycle                                           | [ ]    |                       |
+
 
 **Niveau global du module 5** : `[ ]` Acquis  `[ ]` Non acquis
 
 **Commentaire de synthèse** :
 
->
+
 
 ---
 
@@ -178,54 +188,58 @@ Ce document fournit au formateur des grilles d'évaluation standardisées pour o
 - Orchestrer plusieurs rôles / agents sur un livrable unique.
 - Analyser de manière critique limites et opportunités de l'IA en développement.
 
-| Critère                                                                                              | Acquis | Commentaire formateur |
-| ---------------------------------------------------------------------------------------------------- | :----: | --------------------- |
-| Configuration claire des agents par rôle (prompts, rules, contrats de contexte par rôle)             | [ ]    |                       |
-| Orchestration effective des 5 rôles : PO, Architecte, Dev, QA, Code Reviewer                         | [ ]    |                       |
-| Sprint 1 livré : MVP avec stories, design, implémentation, tests, review                             | [ ]    |                       |
-| Sprint 2 livré : enrichissement, optimisations, documentation                                        | [ ]    |                       |
-| Sprint 3 livré : finalisation et démo                                                                | [ ]    |                       |
-| Démonstration structurée et claire (~10 min) devant le groupe                                        | [ ]    |                       |
-| Analyse critique exprimée : limites et opportunités de l'IA observées sur le projet                  | [ ]    |                       |
+
+| Critère                                                                                  | Acquis | Commentaire formateur |
+| ---------------------------------------------------------------------------------------- | ------ | --------------------- |
+| Configuration claire des agents par rôle (prompts, rules, contrats de contexte par rôle) | [ ]    |                       |
+| Orchestration effective des 5 rôles : PO, Architecte, Dev, QA, Code Reviewer             | [ ]    |                       |
+| Sprint 1 livré : MVP avec stories, design, implémentation, tests, review                 | [ ]    |                       |
+| Sprint 2 livré : enrichissement, optimisations, documentation                            | [ ]    |                       |
+| Sprint 3 livré : finalisation et démo                                                    | [ ]    |                       |
+| Démonstration structurée et claire (~10 min) devant le groupe                            | [ ]    |                       |
+| Analyse critique exprimée : limites et opportunités de l'IA observées sur le projet      | [ ]    |                       |
+
 
 **Niveau global du module 6** : `[ ]` Acquis  `[ ]` Non acquis
 
 **Commentaire de synthèse** :
 
->
+
 
 ---
 
 ## Synthèse finale
 
-| Module | Intitulé                                                                              | Niveau global (Acquis / Non acquis) | Observation clé |
-| :----: | ------------------------------------------------------------------------------------- | :---------------------------------: | --------------- |
-| 1      | Structurer le Vibe Coding et le prompt engineering en contexte entreprise             |                                     |                 |
-| 2      | Intensifier la pratique : outillage, Git d'équipe, labs et garde-fous                 |                                     |                 |
-| 3      | Concevoir la stack agent : anatomie, Rules, Skills et premières intégrations MCP      |                                     |                 |
-| 4      | Industrialiser les agents : MCP avancé et sécurité opérationnelle                     |                                     |                 |
-| 5      | Cadrer le développement assisté : harness et qualité sur le cycle                     |                                     |                 |
-| 6      | Pratiquer des méthodes de travail adaptées                                            |                                     |                 |
+
+| Module | Intitulé                                                                         | Niveau global (Acquis / Non acquis) | Observation clé |
+| ------ | -------------------------------------------------------------------------------- | ----------------------------------- | --------------- |
+| 1      | Structurer le Vibe Coding et le prompt engineering en contexte entreprise        |                                     |                 |
+| 2      | Intensifier la pratique : outillage, Git d'équipe, labs et garde-fous            |                                     |                 |
+| 3      | Concevoir la stack agent : anatomie, Rules, Skills et premières intégrations MCP |                                     |                 |
+| 4      | Industrialiser les agents : MCP avancé et sécurité opérationnelle                |                                     |                 |
+| 5      | Cadrer le développement assisté : harness et qualité sur le cycle                |                                     |                 |
+| 6      | Pratiquer des méthodes de travail adaptées                                       |                                     |                 |
+
 
 ### Appréciation globale du formateur
 
->
+
 
 ### Points forts identifiés
 
--
--
--
+- 
+- 
+- 
 
 ### Axes de progression recommandés
 
--
--
--
+- 
+- 
+- 
 
 ### Suite recommandée
 
->
+
 
 ---
 
