@@ -16,13 +16,13 @@
 ## 📅 Planning (demi-journée)
 
 
-| Horaire           | Séquence                     | Durée | Contenu                                            |
-| ----------------- | ---------------------------- | ----- | -------------------------------------------------- |
-| **9h00 - 9h30**   | **Retour challenge + intro** | 30min | Partage des 3 agents imaginés, patterns récurrents |
-| **9h30 - 10h30**  | **Agents IA — théorie**      | 60min | Types, anatomie, modèles, use cases, drift         |
-| **10h30 - 10h45** | **☕ PAUSE**                  | 15min |                                                    |
-| **10h45 - 11h15** | **Rules, Skills, MCP**       | 30min | Concepts et démos API / DB                         |
-| **11h15 - 12h30** | **TP : Rules, Skills, MCP**  | 75min | Setup + débrief collectif                          |
+| Horaire           | Séquence                    | Durée | Contenu                                            |
+| ----------------- | --------------------------- | ----- | -------------------------------------------------- |
+| **9h00 - 9h30**   | **Intro**                   | 30min | Partage des 3 agents imaginés, patterns récurrents |
+| **9h30 - 10h30**  | **Agents IA — théorie**     | 60min | Types, anatomie, modèles, use cases, drift         |
+| **10h30 - 10h45** | **☕ PAUSE**                 | 15min |                                                    |
+| **10h45 - 11h15** | **Rules, Skills, MCP**      | 30min | Concepts et démos API / DB                         |
+| **11h15 - 12h30** | **TP : Rules, Skills, MCP** | 75min | Setup + débrief collectif                          |
 
 
 *L’après-midi du jour 2 est couvert par le **module 4** (MCP poussé, sécurité, BMAD).*
@@ -31,11 +31,10 @@
 
 ## 📚 Contenu détaillé
 
-### 1. Retour challenge overnight
+### 1. Intro
 
-- Partage des 3 agents imaginés par chaque participant
-- Identification des patterns récurrents
-- Classification selon les types d’agents
+- Tour de table : retour sur les deux premiers modules
+- Identification des patterns récurrents pour aller vers l'automatisation
 
 ### 2. Agents IA : théorie avancée
 
