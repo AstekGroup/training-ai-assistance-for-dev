@@ -21,7 +21,7 @@
 | **13h30 - 14h45** | **Skills et MCP avancés**  | 75min  | Serveurs MCP utiles en entreprise, configuration ciblée |
 | **14h45 - 15h15** | **Sécurité des agents IA** | 30min  | Menaces récentes, défenses pratiques                    |
 | **15h15 - 15h30** | **☕ PAUSE**                | 15min  |                                                         |
-| **15h30 - 17h15** | **BMAD-METHOD + TP**       | 105min | Méthode, installation, déroulé, lecture des livrables   |
+| **15h30 - 17h15** | **TP + BMAD-METHOD**       | 105min | Méthode, installation, déroulé, lecture des livrables   |
 | **17h15 - 17h30** | **Bilan J2**               | 15min  | Retour sur la journée                                   |
 
 
@@ -33,14 +33,12 @@
 
 Objectif : dépasser le « premier MCP » du module 3.
 
-**Pistes de travail (adapter au contexte client / formation)** :
+**Pistes de travail pour le TP** :
 
 - **Documentation à jour** : MCP type Context7 (ou équivalent) pour réduire les hallucinations d’API
 - **Forge logicielle** : intégration GitLab / GitHub (issues, MR) — privilégier la **ciblage** des outils exposés pour limiter contexte et risques
 - **Navigateur / UI** : MCP navigateur ou Playwright pour scénarios contrôlés
 - **Règles d’usage** : quand préférer `gh` / `glab` en CLI plutôt qu’un MCP (latence, bruit, périmètre)
-
-**Atelier** : choisir 1–2 serveurs MCP, les configurer, documenter dans les skills / rules le **périmètre autorisé** (repos, branches, secrets jamais passés en prompt).
 
 ### 2. Sécurité des agents IA
 
@@ -61,7 +59,13 @@ Objectif : dépasser le « premier MCP » du module 3.
 - **Sandboxing** : isolation lorsque le risque l’exige
 - **Monitoring** : activité réseau, journaux d’outils, politiques sur les secrets
 
-### 3. BMAD-METHOD
+### 3. TP
+
+Choisir 1–2 serveurs MCP, les configurer, documenter dans les skills / rules le **périmètre autorisé** (repos, branches, secrets jamais passés en prompt).
+
+Vérifier la sécurité de l'application, montrer la bonne compréhension des risques des agents
+
+### 4. TP guidé : BMAD-METHOD
 
 C'est une méthode de développement logiciel qui utilise les agents IA pour automatiser et améliorer le processus de développement.
 
@@ -73,12 +77,6 @@ Voir le site web [https://bmadcodes.com/](https://bmadcodes.com/) pour plus de d
 - **Model** : modélisation assistée (UML, diagrammes)
 - **Architect** : architecture technique avec validation IA
 - **Develop** : développement orchestré par agents
-
-### 4. TP guidé : BMAD-METHOD
-
-- Installer BMAD
-- Lancer le processus BMAD
-- Étudier les résultats (qualité, dette, alignement avec le besoin)
 
 ---
 

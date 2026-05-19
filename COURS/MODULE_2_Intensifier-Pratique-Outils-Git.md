@@ -22,7 +22,7 @@
 | **14h00 - 14h30** | **Git + IA équipes**            | 30min  | Workflows, branches, MR/PR, conventions de commits                                   |
 | **14h30 - 16h30** | **Ateliers (labs)**             | 120min | Mini-projets vibe coding (voir ci-dessous)                                           |
 | **16h30 - 16h45** | **☕ PAUSE**                     | 15min  |                                                                                      |
-| **16h45 - 17h30** | **Bonnes pratiques entreprise** | 45min  | OWASP, perf, Clean Architecture, pièges TDD / tests avec LLM                         |
+| **16h45 - 17h00** | **Bonnes pratiques entreprise** | 45min  | OWASP, perf, Clean Architecture, pièges TDD / tests avec LLM                         |
 
 ---
 
