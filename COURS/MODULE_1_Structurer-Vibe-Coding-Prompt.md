@@ -52,7 +52,7 @@ Il existe des cursus dédiés aux projets IA ; les formateurs peuvent vous orien
 
 - **Thinking** : réflexion et raisonnement assistés par IA
 - **Prompting** : ingénierie de prompt avancée
-- **Tools** : maîtrise des outils IA (Cursor, Claude Code, Antigravity, etc.)
+- **Tools** : maîtrise des outils de l'IDE (navigateur intégré, recherche web, serveurs MCP, cli …)
 - **Context** : gestion du contexte et de la mémoire
 - **Review** : revue critique et validation humaine
 

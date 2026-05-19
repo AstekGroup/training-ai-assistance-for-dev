@@ -47,20 +47,19 @@ Ce document fournit au formateur des grilles d'évaluation standardisées pour o
 - Maîtriser le framework des 5 compétences du Vibe Coding.
 - Appliquer le prompt engineering aux contraintes d'entreprise.
 
-| Critère                                                                              | Acquis | Commentaire formateur |
-| ------------------------------------------------------------------------------------ | ------ | --------------------- |
-| Thinking : raisonnement structuré avant le premier prompt                            | [ ]    |                       |
-| Prompting : premier prompt précis, contraintes métier explicites (stack, conformité) | [ ]    |                       |
-| Context : gestion de la fenêtre de conversation, reset après feature majeure         | [ ]    |                       |
-| Review : relecture critique du plan agent et validation humaine du code généré       | [ ]    |                       |
-| Todo app progressive livrée et fonctionnelle                                         | [ ]    |                       |
+
+| Critère                                                                                                                                   | Acquis | Commentaire formateur |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | ------ | --------------------- |
+| Thinking : raisonnement structuré avant le premier prompt                                                                                 | [ ]    |                       |
+| Prompting : premier prompt précis, contraintes métier explicites (stack, conformité), prompts d'échanges précis                           | [ ]    |                       |
+| Context : gestion de la fenêtre de conversation, usage de plusieurs fenêtres de conversation, nouvelle conversation après feature majeure | [ ]    |                       |
+| Review : relecture critique du plan et validation humaine du code généré                                                                  | [ ]    |                       |
+| Todo app progressive livrée et fonctionnelle                                                                                              | [ ]    |                       |
 
 
 **Niveau global du module 1** : `[ ]` Acquis  `[ ]` Non acquis
 
 **Commentaire de synthèse** :
-
-
 
 ---
 
@@ -89,8 +88,6 @@ Ce document fournit au formateur des grilles d'évaluation standardisées pour o
 
 **Commentaire de synthèse** :
 
-
-
 ---
 
 ## Module 3 — Concevoir la stack agent : Rules, Skills et MCP
@@ -116,8 +113,6 @@ Ce document fournit au formateur des grilles d'évaluation standardisées pour o
 **Niveau global du module 3** : `[ ]` Acquis  `[ ]` Non acquis
 
 **Commentaire de synthèse** :
-
-
 
 ---
 
@@ -145,8 +140,6 @@ Ce document fournit au formateur des grilles d'évaluation standardisées pour o
 
 **Commentaire de synthèse** :
 
-
-
 ---
 
 ## Module 5 — Cadrer le développement assisté : harness et qualité sur le cycle
@@ -172,8 +165,6 @@ Ce document fournit au formateur des grilles d'évaluation standardisées pour o
 **Niveau global du module 5** : `[ ]` Acquis  `[ ]` Non acquis
 
 **Commentaire de synthèse** :
-
-
 
 ---
 
@@ -202,8 +193,6 @@ Ce document fournit au formateur des grilles d'évaluation standardisées pour o
 
 **Commentaire de synthèse** :
 
-
-
 ---
 
 ## Synthèse finale
@@ -221,23 +210,23 @@ Ce document fournit au formateur des grilles d'évaluation standardisées pour o
 
 ### Appréciation globale du formateur
 
-
-
 ### Points forts identifiés
 
 - 
+
 - 
+
 - 
 
 ### Axes de progression recommandés
 
 - 
+
 - 
+
 - 
 
 ### Suite recommandée
-
-
 
 ---
 
