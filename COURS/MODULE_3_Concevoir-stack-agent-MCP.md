@@ -41,16 +41,21 @@
 #### Anatomie technique d'un agent
 
 ```
-Agent IA = LLM + Rules + Skills + Contexte + Mode
+Agent IA vibe-coding = LLM + Contexte (imposé par l'IDE, fenêtre de conversation, mémoire, rules, skills, MCP, Mode)
 ```
 
 - **LLM** : moteur de raisonnement (GPT, Claude, Gemini, etc.)
-- **Rules** : règles systématiques
-- **Skills** : boîte à outils du LLM (MCP, API, CLI, prompts, etc.)
-- **Contexte** : fenêtre de conversation + mémoire court / long terme selon outil
+- **Rules de l'IDE** : les IDE amènent un lot de règles pré-déterminées q
+- **Mémoire** : règles retenues automatiquement (IDE) ou par choix manuel
+- **Rules** : règles systématiques imposées par l'utilisateur (ou les admins de son IDE)
+- **Skills** : boîte à outils du LLM (apppels MCP, API, CLI, prompts, etc.), côté utilisateur (ou admins de son IDE)
+- **MCP** : serveurs proposant de l'accès à des données, des outils ou des prompts. Côté utilisateur / admins de l'IDE 
 - **Contrôle** : modes plan / edit / ask / debug
 
-Anatomie technique d'un agent
+Nota: Les admins d'un IDE peuvent imposer des règles À 3 niveaux 
+- Entreprise
+- Équipe
+- Individuel
 
 #### Liste des modèles
 
@@ -59,12 +64,12 @@ Anatomie technique d'un agent
 | ----------------- | ------ | ------------------------------------------------------ |
 | Gemini 3.1 Pro    | High   |                                                        |
 | Claude-Opus-4.7   | High   | meilleur modèle à l'heure actuelle                     |
-| Gemini 3.1 Flash  | Medium |                                                        |
+| Gemini 3 Flash    | Medium |                                                        |
 | Claude-4.6-Sonnet | Medium |                                                        |
-| Composer-2        | Medium | rapide                                                 |
+| Composer-2.5      | Medium | rapide                                                 |
 | Claude-4.6-Haiku  | léger  | rapide mais peu doué                                   |
-| Mistral           | léger  | Solution souveraine au rapport qualité/coût avantageux |
-| Kimi K2.5         | léger  | Quasiment gratuit                                      |
+| Mistral 3         | léger  | Solution souveraine au rapport qualité/coût avantageux |
+| Kimi K2.6         | léger  | Quasiment gratuit                                      |
 
 
 #### Liste des use cases

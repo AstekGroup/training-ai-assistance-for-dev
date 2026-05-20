@@ -56,36 +56,46 @@ Complément au module 1 : choisir l’outil selon le poste (plan vs agent, inté
 - Workflows collaboratifs : multi-branches, MR/PR, résolution de conflits assistée
 - Revues automatisées et **conventions de commits** alignées projet
 
-### 3. Ateliers (labs)
+### 3. TP
 
 **Objectif** : monter en intensité sur l’agent + Git.
 
-#### Exemple 1 : Blog statique
+#### Exemples de projets 
 
-Créer un générateur de blog statique avec IA.  
-**Livrables** : site fonctionnel, générateur de contenu.
+##### Exemple 1 : Blog statique
 
-#### Exemple 2 : Dashboard simple
+Créer un générateur de blog statique
 
-Tableau de bord avec visualisation de données.  
-**Livrables** : dashboard interactif, graphiques.
+##### Exemple 2 : Dashboard simple
 
-#### Exemple 3 : API CRUD
+Créer un tableau de bord de visualisation de données (BDD, logs…) 
 
-API REST avec persistance.  
-**Livrables** : API fonctionnelle, documentation type Swagger / OpenAPI.
+##### Exemple 3 : API CRUD
 
-#### Exemple 4 : Documentation uniformisée
+Créer une API REST avec un front-end 
+
+##### Exemple 4 : Amélioration d'un projet existant
+
+Utiliser un projet personnel ou de mécénat de compétence
+
+#### Axes de travail
+
+Points à aborder dans le TP
+
+#### Axe 1 : git
+
+Utiliser git avec l'agent IA : commit messages, des branches etc. plus utilisation de `gh`/`glab` pour suivre les Merge Requests/Pull Requests, les issues etc.
+
+#### Axe 2 : Documentation uniformisée
 
 Trouver un prompt efficace pour documenter des projets existants de façon homogène.  
-**Livrables** : doc générée, templates réutilisables.
 
-#### Exemple 5 : Tests
+#### Axe 3 : Tests
 
 Rédiger des tests pour du code existant.  
 **Livrables** : tests unitaires / intégration / perf / sécurité, cahier de recette pour le fonctionnel.
 
-#### Exemple 6 : Optimisation
+#### Axe 4 : Optimisation
 
 Optimiser du code existant (perf, dette).  
 **Livrables** : factorisation, audit sécurité, rapport perf, accessibilité si pertinent.
