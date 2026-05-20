@@ -16,13 +16,13 @@
 ## 📅 Planning (demi-journée)
 
 
-| Horaire           | Séquence                   | Durée  | Contenu                                                 |
-| ----------------- | -------------------------- | ------ | ------------------------------------------------------- |
-| **13h30 - 14h45** | **Skills et MCP avancés**  | 75min  | Serveurs MCP utiles en entreprise, configuration ciblée |
-| **14h45 - 15h15** | **Sécurité des agents IA** | 30min  | Menaces récentes, défenses pratiques                    |
-| **15h15 - 15h30** | **☕ PAUSE**                | 15min  |                                                         |
-| **15h30 - 17h15** | **TP + BMAD-METHOD**       | 105min | Méthode, installation, déroulé, lecture des livrables   |
-| **17h15 - 17h30** | **Bilan J2**               | 15min  | Retour sur la journée                                   |
+| Horaire           | Séquence                                        | Durée | Contenu                                                                       |
+| ----------------- | ----------------------------------------------- | ----- | ----------------------------------------------------------------------------- |
+| **13h30 - 14h15** | **Skills et MCP avancés et sécurité agents IA** | 45min | Serveurs MCP utiles en entreprise, configuration ciblée. Menaces, protections |
+| **14h15 - 15h45** | **TP**                                          | 90min | Mise en application MCP avec rules                                            |
+| **15h45 - 16h00** | **☕ PAUSE**                                     | 15min |                                                                               |
+| **16h00 - 16h45** | **TP guidé BMAD-METHOD**                        | 45min | Méthode, installation, déroulé, lecture des livrables                         |
+| **16h45 - 17h00** | **Bilan J2**                                    | 15min | Retour sur la journée                                                         |
 
 
 ---
@@ -37,7 +37,7 @@ Objectif : dépasser le « premier MCP » du module 3.
 
 - **Documentation à jour** : MCP type Context7 (ou équivalent) pour réduire les hallucinations d’API
 - **Forge logicielle** : intégration GitLab / GitHub (issues, MR) — privilégier la **ciblage** des outils exposés pour limiter contexte et risques
-- **Navigateur / UI** : MCP navigateur ou Playwright pour scénarios contrôlés
+- **Navigateur / UI** : MCP navigateur ou Playwright pour scénarios contrôlés, Context7, Jira, Postgres, Excalidraw…
 - **Règles d’usage** : quand préférer `gh` / `glab` en CLI plutôt qu’un MCP (latence, bruit, périmètre)
 
 ### 2. Sécurité des agents IA
