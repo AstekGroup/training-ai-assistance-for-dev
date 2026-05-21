@@ -20,7 +20,7 @@
 | ----------------- | --------------------------------------------- | ------ | ------------------------------------ |
 | **9h15 - 10h15**  | **Harness engineering & contrat de contexte** | 60min  | Concepts, template, exemples         |
 | **10h15 - 10h30** | **☕ PAUSE**                                   | 15min  |                                      |
-| **10h30 - 12h30** | **IA : debug, optim, tests, review**          | 120min | Techniques + exercice pratique guidé |
+| **10h30 - 12h30** | **TP**                                        | 120min | Mise en application                  |
 
 
 *L’après-midi du jour 3 est couvert par le **module 6** (méthodes de travail adaptées, TP de synthèse, clôture).*

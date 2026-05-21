@@ -41,7 +41,8 @@
 #### Anatomie technique d'un agent
 
 ```
-Agent IA vibe-coding = LLM + Contexte (imposé par l'IDE, fenêtre de conversation, mémoire, rules, skills, MCP, Mode)
+Agent IA vibe-coding = LLM + Contexte
+(imposé par l'IDE, fenêtre de conversation, mémoire, rules, skills, MCP, Mode)
 ```
 
 - **LLM** : moteur de raisonnement (GPT, Claude, Gemini, etc.)
