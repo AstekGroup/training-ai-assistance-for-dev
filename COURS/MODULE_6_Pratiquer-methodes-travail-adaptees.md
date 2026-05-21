@@ -33,16 +33,16 @@ Stage Gate
 
 ```mermaid
 graph LR
-    S1[Stage 1: Scoping] --> G1{Gate 1}
-    G1 --> S2[Stage 2: Génération protype]
-    S2 --> G2{Gate 2}
-    G2 --> S3[Stage 3: Raffinement avec business case]
-    S3 --> G3{Gate 3}
-    G3 --> S4[Stage 4: Revue avec plan d'implémentation]
-    S4 --> G4{Gate 4}
-    G4 --> S5[Stage 5: Livraison, validation du produit]
-    S5 --> G5[Stage 6: Mise en production, lancement du produit] 
-    
+    S1["Stage 1: Scoping"] --> G1{"Gate 1"}
+    G1 --> S2["Stage 2: Génération protype"]
+    S2 --> G2{"Gate 2"}
+    G2 --> S3["Stage 3: Raffinement avec business case"]
+    S3 --> G3{"Gate 3"}
+    G3 --> S4["Stage 4: Revue avec plan d'implémentation"]
+    S4 --> G4{"Gate 4"}
+    G4 --> S5["Stage 5: Livraison, validation du produit"]
+    S5 --> G5["Stage 6: Mise en production, lancement du produit"]
+
     style G1 fill:#f9f,stroke:#333,stroke-width:2px
     style G2 fill:#f9f,stroke:#333,stroke-width:2px
     style G3 fill:#f9f,stroke:#333,stroke-width:2px
