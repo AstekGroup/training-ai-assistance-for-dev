@@ -45,6 +45,10 @@ C'est un **livrable projet** : référence entre parties prenantes (métier, arc
 
 Il peut nourrir un `AGENTS.md`, mais ce n'est pas sa vocation première : certaines informations peuvent être hors périmètre agent (multi-repo, contraintes organisationnelles).
 
+Il indique les **must**, **should**, **would** et **won't** d'un contexte projet. En se concentrant sur 5 points.
+
+Ce document peut exister à un niveau entreprise ou projet
+
 ##### Les 5 piliers du contrat de contexte
 
 1. **Objectif** : clarifier l'objectif attendu
@@ -123,6 +127,10 @@ Il peut nourrir un `AGENTS.md`, mais ce n'est pas sa vocation première : certai
 **Exemple** : revue structurée d'une MR complète.
 
 ---
+
+## TP
+
+Mise en œuvre d'un cycle de développement complet de la fonctionnalité à la revue de code avec un harness complet (rules, skills)
 
 ## 🔗 Enchaînement
 

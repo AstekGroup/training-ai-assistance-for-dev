@@ -105,9 +105,7 @@ Ce document fournit au formateur des grilles d'évaluation standardisées pour o
 | ------------------------------------------------------------------------------------- | ------ | --------------------- |
 | `AGENTS.md` rédigé, lisible et testé concrètement avec l'agent                        | [ ]    |                       |
 | `SKILL.md` valide, référence la spec agentskills.io, testé avec l'agent               | [ ]    |                       |
-| Serveur MCP choisi, configuré et intégré avec rules / skills                          | [ ]    |                       |
-| MCP testé et résultat exploitable observé                                             | [ ]    |                       |
-| Stratégies anti-drift appliquées (Rules plutôt que prompts longs, reset conversation) | [ ]    |                       |
+| Mise en application des fichiers créés : stress test, création de fonctionalités etc. | [ ]    |                       |
 
 
 **Niveau global du module 3** : `[ ]` Acquis  `[ ]` Non acquis
@@ -133,7 +131,7 @@ Ce document fournit au formateur des grilles d'évaluation standardisées pour o
 | Input validation appliquée (filtrage sources, contrôle du code récupéré)                       | [ ]    |                       |
 | Output filtering : relecture humaine du code et des commentaires générés                       | [ ]    |                       |
 | Sandboxing / monitoring envisagés ou mis en place selon le risque                              | [ ]    |                       |
-| Justifie le choix MCP vs CLI (`gh` / `glab`) selon latence, bruit, périmètre                   | [ ]    |                       |
+| Justifie le choix MCP vs CLI selon latence, bruit, périmètre                                   | [ ]    |                       |
 
 
 **Niveau global du module 4** : `[ ]` Acquis  `[ ]` Non acquis
