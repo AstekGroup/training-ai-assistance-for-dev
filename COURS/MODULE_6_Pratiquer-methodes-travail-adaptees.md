@@ -29,7 +29,7 @@
 
 ### 1. Stage gate — méthode de travail adaptée
 
-Stage Gate
+![Méthode Stage-Gate](COURS/Images/stage-gate.jpg)
 
 ```mermaid
 graph LR

@@ -14,9 +14,6 @@
     <!-- Highlight.js pour la coloration syntaxique -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-
-    <!-- Mermaid.js pour les schémas -->
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -409,11 +406,9 @@
             border: 1px solid var(--border-color);
             border-radius: 12px;
             padding: 1.25rem;
+            overflow-x: auto;
             margin: 1.5rem 0;
             position: relative;
-            white-space: pre-wrap;
-            overflow-wrap: break-word;
-            word-break: break-word;
         }
 
         #content pre code {
@@ -421,22 +416,6 @@
             padding: 0;
             border: none;
             color: var(--text-primary);
-        }
-
-        /* Diagrammes Mermaid */
-        #content .mermaid {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            overflow-x: auto;
-            text-align: center;
-        }
-
-        #content .mermaid svg {
-            max-width: 100%;
-            height: auto;
         }
 
         /* Tables */
@@ -687,23 +666,19 @@
         // ============================================
         const themeToggle = document.getElementById('themeToggle');
         const htmlElement = document.documentElement;
-        const contentDiv = document.getElementById('content');
-        const navButtons = document.querySelectorAll('.nav-btn');
         
         // Charger le thème sauvegardé ou utiliser dark par défaut
         const savedTheme = localStorage.getItem('theme') || 'dark';
         htmlElement.setAttribute('data-theme', savedTheme);
         updateHighlightTheme(savedTheme);
         
-        themeToggle.addEventListener('click', async () => {
+        themeToggle.addEventListener('click', () => {
             const currentTheme = htmlElement.getAttribute('data-theme');
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
             
             htmlElement.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
             updateHighlightTheme(newTheme);
-            resetMermaidDiagrams();
-            await renderMermaid();
         });
         
         function updateHighlightTheme(theme) {
@@ -718,63 +693,6 @@
         }
 
         // ============================================
-        // MERMAID
-        // ============================================
-        let mermaidInitialized = false;
-
-        function getMermaidTheme() {
-            return htmlElement.getAttribute('data-theme') === 'light' ? 'default' : 'dark';
-        }
-
-        function initMermaid() {
-            mermaid.initialize({
-                startOnLoad: false,
-                theme: getMermaidTheme(),
-                securityLevel: 'loose',
-                flowchart: { htmlLabels: true, useMaxWidth: true }
-            });
-            mermaidInitialized = true;
-        }
-
-        function processMermaidBlocks(container) {
-            container.querySelectorAll('pre code.language-mermaid').forEach((codeEl) => {
-                const pre = codeEl.parentElement;
-                const div = document.createElement('div');
-                div.className = 'mermaid';
-                const source = codeEl.textContent;
-                div.setAttribute('data-mermaid-source', source);
-                div.textContent = source;
-                pre.replaceWith(div);
-            });
-        }
-
-        function resetMermaidDiagrams() {
-            contentDiv.querySelectorAll('.mermaid').forEach((node) => {
-                const source = node.getAttribute('data-mermaid-source');
-                if (!source) return;
-                node.removeAttribute('data-processed');
-                node.textContent = source;
-            });
-        }
-
-        async function renderMermaid() {
-            const nodes = contentDiv.querySelectorAll('.mermaid');
-            if (!nodes.length) return;
-
-            if (!mermaidInitialized) {
-                initMermaid();
-            } else {
-                mermaid.initialize({ theme: getMermaidTheme() });
-            }
-
-            try {
-                await mermaid.run({ nodes: Array.from(nodes) });
-            } catch (error) {
-                console.error('Erreur rendu Mermaid:', error);
-            }
-        }
-
-        // ============================================
         // CONFIGURATION DE MARKED
         // ============================================
         
@@ -785,9 +703,6 @@
             headerIds: true,
             mangle: false,
             highlight: function(code, lang) {
-                if (lang === 'mermaid') {
-                    return code;
-                }
                 if (lang && hljs.getLanguage(lang)) {
                     try {
                         return hljs.highlight(code, { language: lang }).value;
@@ -797,22 +712,20 @@
             }
         });
 
+        const contentDiv = document.getElementById('content');
+        const navButtons = document.querySelectorAll('.nav-btn');
+
         // Fonction pour afficher le contenu
-        async function showContent(html) {
+        function showContent(html) {
             contentDiv.innerHTML = html;
             contentDiv.style.animation = 'none';
             contentDiv.offsetHeight; // Force reflow
             contentDiv.style.animation = 'fadeIn 0.4s ease';
-
-            processMermaidBlocks(contentDiv);
             
-            // Highlight code blocks (hors Mermaid)
+            // Highlight code blocks
             contentDiv.querySelectorAll('pre code').forEach((block) => {
-                if (block.classList.contains('language-mermaid')) return;
                 hljs.highlightElement(block);
             });
-
-            await renderMermaid();
         }
 
         // Fonction pour afficher l'erreur
