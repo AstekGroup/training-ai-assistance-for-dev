@@ -27,9 +27,16 @@ Composants : `slide-module-cover.tsx` (garde), `slide-module-conclusion.tsx` (bi
 
 ## Patterns interactifs
 
-- **Modales** (`DetailDialog`) : outils, compétences, menaces sécurité, piliers contrat, stages Stage-Gate, planning modules
+- **Modales** (`DetailDialog`) : outils, compétences, pistes MCP, menaces sécurité, défenses pratiques, piliers contrat, stages Stage-Gate, planning modules
 - **Accordéons** : bonnes pratiques M2, template contrat M5, cycle qualité M5, synthèse M6
 - **Scroll** : panorama outillage (11 cartes)
+
+### Slide 21 — M4 MCP & sécurité (`slide-08-m4-mcp-securite.tsx`)
+
+- **🔌 Pistes MCP entreprise** (modales cliquables) : doc Context7, forge GitLab/GitHub, navigateur/Playwright, autres intégrations
+- **⚡ Lien** : [MCP servers vs CLI — comparaison data-driven](https://blog.mornati.net/the-future-of-agentic-tooling-mcp-servers-vs-cli-a-data-driven-comparison) — *attention, les MCP sont gourmands en tokens*
+- **🚨 Menaces** (modales) : prompt injection, hallucination attacks, data leakage, agent hijacking
+- **🛡️ Défenses pratiques** (modales) : input validation, output filtering, sandboxing, monitoring, ciblage MCP, CLI vs MCP
 
 ## Glossaire
 
