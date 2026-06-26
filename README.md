@@ -18,6 +18,28 @@
 
 Le parcours **3 jours** est découpé en **6 modules** (demi-journées) : détail dans `[COURS/README.md](./COURS/README.md)`.
 
+## Présentation (slides)
+
+Le support de présentation est un **deck interactif** (React + Vite) dans le dossier `[site/](./site/)`, basé sur le template Astek Pulse Meetup.
+
+```bash
+./start.sh
+```
+
+Puis ouvrir :
+
+- **Landing** : [http://localhost:5173/](http://localhost:5173/)
+- **Slides** : [http://localhost:5173/slides/1](http://localhost:5173/slides/1)
+
+Le contenu des slides est piloté par `[slides/meetup-slides.md](./slides/meetup-slides.md)` (source de vérité), traduit en composants React dans `site/src/meetup/slides/`.
+
+| Touche | Action |
+| ------ | ------ |
+| `←` / `→` | Slide précédent / suivant |
+| `F` | Plein écran |
+| `G` | Glossaire |
+| `S` | Sommaire |
+
 ---
 
 ## 🎯 Objectifs pédagogiques
