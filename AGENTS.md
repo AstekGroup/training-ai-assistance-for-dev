@@ -31,12 +31,16 @@ Il s'agit du dépôt de la formation "Vibe Coding : Outils IA pour Développeurs
 │   ├── MODULE_4_...    # J2 pm — Industrialiser (MCP, sécu, BMAD)
 │   ├── MODULE_5_...    # J3 matin — Cadrer (harness, contrat, qualité)
 │   └── MODULE_6_...    # J3 pm — Pratiquer (stage gate, TP final)
+├── site/               # Deck de slides React (Astek Pulse Meetup)
+│   ├── slides/         # Symlink vers slides/meetup-slides.md (source de vérité)
+│   └── src/meetup/     # Composants slides, données, landing
+├── slides/             # Source de vérité markdown des slides (meetup-slides.md)
 ├── AGENTS.md           # Instructions pour les agents IA (ce fichier)
 ├── README.md           # Documentation principale de la formation
 ├── README.pdf          # Version PDF du README
+├── start.sh            # Lance le serveur de développement du deck
 ├── astek-logo.png      # Logo entreprise
-├── astek-icon.png      # Icône entreprise
-└── cours-viewer.html   # Visionneuse HTML des contenus
+└── astek-icon.png      # Icône entreprise
 ```
 
 ## Philosophie de formation
@@ -69,7 +73,8 @@ Ce dépôt est conçu autour de la méthodologie "Vibe Coding" :
 
 - **Dossier** : `[COURS/](./COURS/)`
 - **Syllabus** : Contenus détaillés dans le dossier `[ANNEXES/](./ANNEXES/)`.
-- **Visionneuse** : Fichier `[cours-viewer.html](./cours-viewer.html)` pour la lecture des contenus. ⚠ à lancer avec un serveur HTTP local (ex: `python -m http.server`) ⚠
+- **Slides** : Deck interactif dans `[site/](./site/)` (React + Vite, template Astek Pulse Meetup). Lancer avec `./start.sh` ou `cd site && pnpm dev` — landing sur `/`, présentation sur `/slides/1`.
+- **Source de vérité slides** : `[slides/meetup-slides.md](./slides/meetup-slides.md)` — toute modification de contenu de présentation se fait d'abord ici, puis dans le composant React correspondant (`site/src/meetup/slides/slide-XX-*.tsx`).
 
 #### Jour 1
 
@@ -100,8 +105,19 @@ Ce dépôt est conçu autour de la méthodologie "Vibe Coding" :
 À chaque modification de fichier :
 
 - Toujours sauvegarder avant de modifier les matériaux de cours
-- Il est indispensable de maintenir la cohérence entre les différentes versions de format (Markdown, Slides, Codelab etc.)
+- Il est indispensable de maintenir la cohérence entre les différentes versions de format (Markdown cours, slides, codelab, etc.)
+- Pour les slides : modifier `slides/meetup-slides.md` en premier, puis le composant React et le registre `site/src/meetup/data/slides.ts`
 - Tester tous les outils ou liens référencés dans les matériaux
+
+### Génération et lancement des slides
+
+```bash
+./start.sh
+# ou manuellement :
+cd site && volta run --node 22.22.2 pnpm install && pnpm dev
+```
+
+Build de production : `cd site && pnpm build` (sortie dans `site/dist/`).
 
 ## Fichiers exclus
 
